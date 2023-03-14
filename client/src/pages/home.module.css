@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: grid;
+  background-color: rgb(177, 179, 179);
+}
+.gridContainer {
+  display: grid;
+  align-items: center;
+}
+.gridImage {
+  display: grid;
+  width: 17rem;
+}
+.heading1 {
+  display: grid;
+  justify-self: right;
+  margin-right: 4rem;
+  font-size: 4rem;
+}
+
+.header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.1fr 0.9fr;
+}
+.headerImage {
+  max-width: 100%;
+  display: grid;
+  align-self: center;
+}
+.mainGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.mainGrid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
