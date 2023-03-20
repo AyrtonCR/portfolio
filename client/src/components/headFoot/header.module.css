@@ -1,0 +1,18 @@
+.header {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  padding: 1rem 2rem;
+  border-bottom: 0.01rem solid;
+  margin-bottom: 1rem;
+}
+.headerImage {
+  display: grid;
+  max-width: 100%;
+  display: grid;
+  align-self: center;
+}
+.headerTitle {
+  display: grid;
+  justify-self: right;
+  font-size: 1rem;
+}

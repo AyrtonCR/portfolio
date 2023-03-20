@@ -1,0 +1,14 @@
+.blurbContainer {
+  max-width: 100%;
+  display: grid;
+  padding: 1rem 1rem;
+}
+
+.blurbTitle {
+  font-size: 0.8rem;
+}
+
+.blurbText {
+  max-width: 100%;
+  font-size: 0.7rem;
+}

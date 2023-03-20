@@ -1,0 +1,10 @@
+.footerContainer {
+  display: grid;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+}
+.footerText {
+  font-size: 0.7rem;
+}
+.footerName {
+}
