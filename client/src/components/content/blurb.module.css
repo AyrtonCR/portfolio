@@ -1,14 +1,29 @@
 .blurbContainer {
-  max-width: 100%;
+  width: 100%;
   display: grid;
+  justify-self: center;
   padding: 1rem 1rem;
 }
 
 .blurbTitle {
-  font-size: 0.8rem;
+  cursor: grab;
+  display: grid;
+  justify-self: center;
+  width: fit-content;
+  font-size: 0.9rem;
+  margin: 0rem;
 }
 
 .blurbText {
+  cursor: grab;
+  width: fit-content;
+  display: grid;
+  justify-self: center;
+  margin: 0rem;
+  margin-bottom: 3rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }

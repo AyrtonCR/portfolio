@@ -84,7 +84,7 @@ const HomeContent = () => {
           different beaches, surfboards, conditions and has the template for a
           forum that surfers can use to keep each other posted on the surf.
         </p>
-        <img className={style.gridImage} src={Celtic} alt="egypt" />
+        <img className={style.gridImageCeltic} src={Celtic} alt="egypt" />
       </div>
     </div>
   );

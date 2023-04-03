@@ -1,18 +1,28 @@
 .header {
   display: grid;
-  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding: 1rem 2rem;
-  border-bottom: 0.01rem solid;
-  margin-bottom: 1rem;
+  /* transition: all 0.5s ease; */
+  opacity: 1;
 }
 .headerImage {
   display: grid;
-  max-width: 100%;
+  max-width: 4rem;
   display: grid;
   align-self: center;
+  filter: invert(100%);
+  cursor: pointer;
+  /* transition: all 0.9s ease;
+  transform: rotate(90deg); */
+}
+.headerImage:hover {
+  /* transform: scale(1.2); */
+  /* transform: rotateY(180deg); */
 }
 .headerTitle {
   display: grid;
+  align-self: center;
   justify-self: right;
   font-size: 1rem;
 }

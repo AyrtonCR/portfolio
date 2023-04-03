@@ -1,9 +1,10 @@
 import style from "./upperNavBar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillCloseCircle } from "react-icons/ai";
+
 import { useState, useEffect, useRef } from "react";
 import User from "../../utilities/images/celtic1.webp";
 import Portrait from "../../utilities/images/goat.png";
+import { motion } from "framer-motion";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 const UpperNavBar = () => {
   const [open, setOpen] = useState(false);
@@ -21,37 +22,64 @@ const UpperNavBar = () => {
     document.addEventListener("mousedown", handler);
   });
   return (
-    <div className="upperNavContainer" ref={menuRef}>
-      <div
-        className="menuTrigger"
-        onClick={() => {
-          setOpen(!open);
-        }}
-      >
-        <h4>OPEN</h4>
-      </div>
+    <motion.div
+      className="upperNavContainer"
+      ref={menuRef}
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: [0, 0.2, 1], scale: [1, 1, 1], y: [0, 5, 0] }}
+      transition={{
+        opacity: { duration: 1.7, delay: 0.7 },
+        scale: { duration: 1.7, delay: 0.7 },
+        duration: 0.26,
+        delay: 3.74,
+        times: [0, 0.7, 1.2],
+        repeatDelay: 12,
+        repeat: Infinity,
+      }}
+    >
       <div className="upperNavLinksContainer">
-        <div className={`dropdownMenu ${open ? "active" : "inactive"}`}>
-          <h3>
-            Look at this
-            <br />
-            <span>Stuff</span>
+        <div
+          className="menuTrigger"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          <h3 className="openMenuTitle">
+            Projects <IoIosArrowDropdown />
           </h3>
-          <ul>
+        </div>
+
+        <div className={`dropdownMenu ${open ? "active" : "inactive"}`}>
+          <ul className="dropdownUl">
             <DropdownItem img={User} text={"Local Surf Project"} />
             <DropdownItem img={User} text={"Portfolio Project"} />
             <DropdownItem img={User} text={"Other Project"} />
             <DropdownItem img={User} text={"Another one"} />
           </ul>
         </div>
-        <div>
-          <h3>LinkedIn</h3>
-        </div>
-        <div>
-          <h3>LinkedIn</h3>
-        </div>
       </div>
-    </div>
+
+      <div class="upperNavSingleLink">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/ayrton-campbell/"
+          class="upperNavSingleLinkText"
+        >
+          LinkedIn
+        </a>
+      </div>
+      <div class="upperNavSingleLink">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.google.com"
+          class="upperNavSingleLinkText"
+        >
+          CV
+        </a>
+      </div>
+    </motion.div>
   );
 };
 function DropdownItem(props) {
@@ -63,20 +91,3 @@ function DropdownItem(props) {
   );
 }
 export default UpperNavBar;
-
-{
-  /* <nav className={styles.MobileNavigation}>
-  {open ? closeIcon : hamburgerIcon}
-  {open && <NavLinks isMobile={true} closeMobileMenu />}
-  <Link to="/" className={styles.headerTitle} element={<Main />}>
-    <img src={Logo} alt="surfboard_logo" className={styles.mobileLogo}></img>
-  </Link>
-</nav>; */
-}
-
-// <a className={style.upperNavLink} href="www.google.com">
-// LinkedIn{" "}
-// </a>
-// <a className={style.upperNavLink} href="www.google.com">
-// CV{" "}
-// </a>

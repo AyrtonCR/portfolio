@@ -1,5 +1,6 @@
 * {
   list-style-type: none;
+  color: white;
 }
 
 .portraitImage {
@@ -15,12 +16,12 @@
 
 .dropdownMenu {
   position: relative;
-  top: 100px;
-  left: 20px;
-  background-color: white;
-  border-radius: 3%;
+  top: 20px;
+  background-color: rgba(181, 181, 181, 0.412);
+  border-radius: 1rem;
   padding: 10px 20px;
-  width: 200px;
+  width: 9rem;
+  z-index: 9;
 }
 
 .dropdownMenu::before {
@@ -41,7 +42,7 @@ h3 {
   padding: 20px 0;
   font-weight: 500;
   font-size: 18px;
-  color: var(--primary-text-color);
+  color: white;
   line-height: 1.2rem;
 }
 
@@ -53,7 +54,7 @@ h3 span {
 
 .dropdownMenu ul li {
   padding: 10px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 0.01rem solid white;
 }
 
 .dropdownMenu ul li:hover a {
@@ -67,20 +68,24 @@ h3 span {
 }
 
 .dropdownItem {
-  display: flex;
-  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0.1rem;
+  font-size: 0.7rem;
 }
 
 .dropdownItem img {
-  max-width: 20px;
-  margin-right: 10px;
+  max-width: 1.3rem;
   opacity: 0.5;
   transition: all 0.5s ease;
 }
 
 .dropdownItem a {
-  max-width: 100px;
-  margin-left: 10px;
+  max-width: 100%;
+  margin-left: 0.5rem;
   transition: all 0.5s ease;
 }
 
@@ -101,9 +106,63 @@ h3 span {
 
 .upperNavLinksContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+  justify-content: center;
   max-width: 100%;
   width: fit-content;
+  z-index: 1000;
+  position: relative;
+  height: 3.5rem;
+  width: 5rem;
+  justify-items: center;
+  /* /* justify-content: center; */
+
+  align-items: center;
+}
+.upperNavContainer {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 0.6fr;
+  max-width: 50rem;
+  padding-bottom: 0.01rem;
+  padding: 0 1.7rem;
+  border-bottom: 0.01rem solid white;
+}
+.openMenuTitle {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  align-items: center;
+}
+.openMenuTitle,
+.upperNavSingleLinkText {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  display: grid;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+.openMenuTitle:hover,
+.upperNavSingleLinkText:hover {
+  border-bottom: 0.01rem solid white;
+  font-size: 0.9rem;
+}
+.menuTrigger {
+  margin-top: 0.2rem;
+  display: grid;
+  justify-self: center;
+  align-content: center;
+}
+.upperNavSingleLink {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: relative;
+  padding: 0rem;
+  margin: 0rem;
 }
 .upperNavItem {
   display: grid;
@@ -132,24 +191,25 @@ h3 span {
   }
 
   .NavBar .MobileNavigation {
-    display: flex;
+    display: grid;
     background-color: #767370;
     padding-top: 1rem;
   }
   .NavBar nav ul {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     position: absolute;
-    top: 80px;
+    top: 40px;
     right: 0;
     width: 40%;
-
     margin: 0 0.2rem;
     background: #293232;
     border: 0.1rem solid rgb(0, 0, 0);
     box-shadow: 0 0 1rem -0.1rem;
     border-radius: 0.25rem;
     z-index: 9;
+  }
+  .dropdownUl {
+    padding: 0.5rem;
   }
   .Hamburger {
     width: 1.3rem;

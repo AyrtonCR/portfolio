@@ -7,17 +7,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   justify-self: center;
-  border-bottom: 0.01rem solid black;
+  border-bottom: 0.01rem solid white;
   padding: 0 1rem;
   max-width: 100%;
 }
 
 .lowerNavLink {
   display: grid;
-  border: 0.01rem solid black;
+  border: 0.01rem solid white;
   padding: 0.2rem 1.1rem;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 0.6rem;
   margin-bottom: 0.6rem;
   max-width: 100%;

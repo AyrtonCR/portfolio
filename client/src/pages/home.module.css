@@ -4,5 +4,67 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   display: grid;
-  background-color: rgb(177, 179, 179);
+  /* background: linear-gradient(
+    180deg,
+    #25cbfa 30%,
+    rgb(56, 215, 248) 50.99%,
+    #64e0fa 80%
+  ); */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  color: black;
+  overflow: clip;
+}
+
+.backgroundContainer {
+}
+.blackPoly {
+  position: absolute;
+  overflow-x: hidden;
+  display: grid;
+  justify-content: center;
+  width: 110rem;
+  overflow: visible;
+  z-index: -1;
+}
+.blackPoly2 {
+  position: absolute;
+  display: grid;
+  transform: rotateY(180deg);
+  justify-content: center;
+  width: 110rem;
+  top: 49.57rem;
+  overflow: visible;
+  z-index: -1;
+}
+.blackPoly3 {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  width: 110rem;
+  top: 99.13rem;
+  overflow: visible;
+  z-index: -1;
+}
+.blackPoly4 {
+  position: absolute;
+  display: grid;
+  transform: rotateY(180deg);
+  justify-content: center;
+  width: 110rem;
+  top: 148.65rem;
+  overflow: visible;
+  z-index: -1;
+}
+.blackPoly5 {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+
+  width: 110rem;
+  top: 198.2rem;
+  overflow: visible;
+  z-index: -1;
 }

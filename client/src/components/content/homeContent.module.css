@@ -2,20 +2,27 @@
   display: grid;
   align-items: center;
 }
-.gridImage {
+.gridImage,
+.gridImageCeltic {
   display: grid;
   align-self: center;
   justify-self: center;
   width: 85%;
-  max-width: 100%;
+  max-width: 20rem;
   padding-bottom: 1rem;
 }
-
+.gridImageCeltic {
+  filter: invert(100%);
+}
 .mainGrid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   max-width: 100%;
+
+  border-radius: 1rem;
+
+  margin: 0 1rem;
 }
 .mainGrid1,
 .mainGrid2,
@@ -26,11 +33,31 @@
   display: grid;
   grid-template-rows: 1fr;
   max-width: 100%;
-  border: 0.01rem solid black;
   margin: 0.5rem 0;
 }
 
 .gridText {
+  display: grid;
+  align-self: center;
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
+}
+
+@media only screen and (min-width: 50rem) {
+  .mainGrid {
+    margin: 0 5rem;
+  }
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3,
+  .mainGrid4,
+  .mainGrid5,
+  .mainGrid6 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 70rem) {
+  .mainGrid {
+    max-width: fit-content;
+  }
 }
