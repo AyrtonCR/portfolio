@@ -29,11 +29,11 @@ const UpperNavBar = () => {
       animate={{ opacity: [0, 0.2, 1], scale: [1, 1, 1], y: [0, 5, 0] }}
       transition={{
         opacity: { duration: 1.7, delay: 0.7 },
-        scale: { duration: 1.7, delay: 0.7 },
-        duration: 0.26,
-        delay: 3.74,
+        scale: { duration: 1.2, delay: 0.7 },
+        duration: 0.5,
+        delay: 3.5,
         times: [0, 0.7, 1.2],
-        repeatDelay: 12,
+        repeatDelay: 11.5,
         repeat: Infinity,
       }}
     >
