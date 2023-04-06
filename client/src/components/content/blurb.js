@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 const Blurb = () => {
   const constraintsRef = useRef(null);
+  const bgRef = useRef(null);
 
   return (
     <div ref={constraintsRef} className={style.blurbContainer}>

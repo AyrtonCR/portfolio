@@ -7,10 +7,10 @@ const Footer = () => {
       <motion.p
         className={style.footerText}
         initial={{ x: 0, scale: 1 }}
-        whileInView={{ x: [0, 6, 0], scale: [1, 1, 1] }}
+        whileInView={{ y: [0, -3, 0], scale: [1, 1, 1] }}
         transition={{
           delay: 2,
-          duration: 0.8,
+          duration: 0.5,
           ease: "easeInOut",
           repeat: Infinity,
           repeatDelay: 5,

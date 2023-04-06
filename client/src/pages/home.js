@@ -15,34 +15,14 @@ import BlackPoly3 from ".././utilities/images/black-low-poly-geometric.png";
 import BlackPoly4 from ".././utilities/images/black-low-poly-geometric.png";
 import BlackPoly5 from ".././utilities/images/black-low-poly-geometric.png";
 import AbFlower from ".././utilities/images/abstract-flower.png";
+import SVGCut from "./svgCut";
+import stylesheet from "./svgCut.css";
 // import React, { useState, useEffect } from "react";
 
 const Home = () => {
   return (
     <div className={style.container}>
-      <div className={style.backgroundContainer}>
-        <img className={style.blackPoly} src={BlackPoly} alt="blackpoly"></img>
-        <img
-          className={style.blackPoly2}
-          src={BlackPoly2}
-          alt="blackpoly"
-        ></img>
-        <img
-          className={style.blackPoly3}
-          src={BlackPoly3}
-          alt="blackpoly"
-        ></img>
-        <img
-          className={style.blackPoly4}
-          src={BlackPoly4}
-          alt="blackpoly"
-        ></img>
-        <img
-          className={style.blackPoly5}
-          src={BlackPoly5}
-          alt="blackpoly"
-        ></img>
-      </div>
+      <BlackGeoWallpapers />
       <Header />
       <UpperNavBar />
       <Blurb />
@@ -53,4 +33,21 @@ const Home = () => {
   );
 };
 
+const BlackGeoWallpapers = () => {
+  return (
+    <div className={style.backgroundContainer}>
+      <img className={style.blackPoly} src={BlackPoly} alt="blackpoly"></img>
+      <div className={style.blackPoly2Container}>
+        <img
+          className={style.blackPoly2}
+          src={BlackPoly2}
+          alt="blackpoly"
+        ></img>
+      </div>
+      <img className={style.blackPoly3} src={BlackPoly3} alt="blackpoly"></img>
+      <img className={style.blackPoly4} src={BlackPoly4} alt="blackpoly"></img>
+      <img className={style.blackPoly5} src={BlackPoly5} alt="blackpoly"></img>
+    </div>
+  );
+};
 export default Home;

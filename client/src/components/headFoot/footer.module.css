@@ -5,6 +5,8 @@
 }
 .footerText {
   font-size: 0.7rem;
+  color: white;
+  text-shadow: 0.12rem 0.12rem 2rem;
 }
 .footerName {
 }

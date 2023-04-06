@@ -6,6 +6,11 @@
 .gridImageCeltic {
   display: grid;
   align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: CENTER;
   justify-self: center;
   width: 85%;
   max-width: 20rem;
@@ -14,26 +19,112 @@
 .gridImageCeltic {
   filter: invert(100%);
 }
+.refHanger1,
+.refHanger2,
+.refHanger3,
+.refHanger4 {
+  border: 0.2rem solid red;
+  position: absolute;
+  left: 0rem;
+  padding: 8rem;
+  width: 100%;
+  z-index: 20;
+}
+.refHanger1 {
+  top: 13rem;
+}
+.refHanger2 {
+  top: 60rem;
+  padding: 5rem;
+}
+.refHanger3 {
+  bottom: 60rem;
+}
+
+.refHanger4 {
+  bottom: 13rem;
+  padding: 2rem;
+}
+
+.topLayerWallpaper,
+.topLayerWallpaper2,
+.topLayerWallpaper3,
+.topLayerWallpaper4 {
+  border: 0.12rem solid black;
+  box-shadow: 0 0.15rem 1rem -0.1rem rgb(19, 19, 19);
+  display: grid;
+  width: 110rem;
+  height: 47rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.topLayerWallpaper2 {
+  top: 43rem;
+  z-index: -3;
+}
+.topLayerWallpaper3 {
+  height: 49rem;
+  top: unset;
+  bottom: 45rem;
+  z-index: -4;
+}
+.topLayerWallpaper4 {
+  top: unset;
+  bottom: 0rem;
+  z-index: -5;
+}
+.mainGridWpHolder {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  z-index: -2;
+}
 .mainGrid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   max-width: 100%;
-
   border-radius: 1rem;
-
   margin: 0 1rem;
 }
+.projectsGrid {
+  gap: 3rem;
+  margin-bottom: 7rem;
+}
+.AboutMeGrid {
+  margin: 2rem 0;
+}
+.FinalTwoGrid {
+  gap: 3rem;
+}
+/* My Projects */
 .mainGrid1,
 .mainGrid2,
-.mainGrid3,
-.mainGrid4,
+.mainGrid3 {
+  display: grid;
+  border: 0.01rem solid white;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
+}
+/* About Me */
+.mainGrid4 {
+  border: 0.01rem solid white;
+  border-radius: 1rem;
+  height: 40rem;
+  margin-bottom: 8rem;
+  box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
+}
+/* Last Two Grids */
 .mainGrid5,
 .mainGrid6 {
   display: grid;
   grid-template-rows: 1fr;
   max-width: 100%;
   margin: 0.5rem 0;
+  border: 0.01rem solid white;
+  border-radius: 1rem;
+  box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
 }
 
 .gridText {
@@ -41,23 +132,48 @@
   align-self: center;
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 @media only screen and (min-width: 50rem) {
   .mainGrid {
     margin: 0 5rem;
   }
+  /* Projects */
   .mainGrid1,
   .mainGrid2,
-  .mainGrid3,
-  .mainGrid4,
+  .mainGrid3 {
+  }
+  /* AboutMe */
+  .mainGrid4 {
+    grid-template-columns: 1fr;
+  }
+  /* FinalTwo */
   .mainGrid5,
   .mainGrid6 {
+    grid-template-columns: 1fr;
+  }
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .AboutMeGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .FinalTwoGrid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 70rem) {
   .mainGrid {
     max-width: fit-content;
+  }
+}
+@media only screen and (min-width: 80rem) {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

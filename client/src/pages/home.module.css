@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+* {
+}
 .container {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -17,17 +18,30 @@
   color: black;
   overflow: clip;
 }
-
+.refHanger1 {
+  position: relative;
+  top: 30rem;
+  left: 2rem;
+  padding: 10rem;
+  border: 0.3rem solid black;
+  z-index: 92;
+}
 .backgroundContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.blackPoly2Container {
+  position: relative;
 }
 .blackPoly {
   position: absolute;
   overflow-x: hidden;
   display: grid;
   justify-content: center;
-  width: 110rem;
+  width: 180rem;
+
   overflow: visible;
-  z-index: -1;
+  z-index: -4;
 }
 .blackPoly2 {
   position: absolute;
@@ -37,7 +51,7 @@
   width: 110rem;
   top: 49.57rem;
   overflow: visible;
-  z-index: -1;
+  z-index: -4;
 }
 .blackPoly3 {
   position: absolute;
@@ -46,7 +60,7 @@
   width: 110rem;
   top: 99.13rem;
   overflow: visible;
-  z-index: -1;
+  z-index: -4;
 }
 .blackPoly4 {
   position: absolute;
@@ -56,7 +70,7 @@
   width: 110rem;
   top: 148.65rem;
   overflow: visible;
-  z-index: -1;
+  z-index: -4;
 }
 .blackPoly5 {
   position: absolute;
@@ -66,5 +80,5 @@
   width: 110rem;
   top: 198.2rem;
   overflow: visible;
-  z-index: -1;
+  z-index: -4;
 }

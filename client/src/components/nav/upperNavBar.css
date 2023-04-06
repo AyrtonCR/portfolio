@@ -1,6 +1,5 @@
 * {
   list-style-type: none;
-  color: white;
 }
 
 .portraitImage {
@@ -127,6 +126,7 @@ h3 span {
   padding-bottom: 0.01rem;
   padding: 0 1.7rem;
   border-bottom: 0.01rem solid white;
+  margin-bottom: 2rem;
 }
 .openMenuTitle {
   display: grid;
