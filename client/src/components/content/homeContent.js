@@ -43,7 +43,7 @@ const HomeContent = () => {
         <motion.img
           style={{
             transform: isInView ? "scale(1.05)" : "none",
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
           }}
           className={style.topLayerWallpaper}
           src={ChchFog}
@@ -51,7 +51,7 @@ const HomeContent = () => {
         <motion.img
           style={{
             transform: isInView2 && !isInView ? "scale(1.05)" : "none",
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
           }}
           className={style.topLayerWallpaper2}
           src={LakeWP}
@@ -61,7 +61,7 @@ const HomeContent = () => {
           style={{
             transform:
               isInView3 && !isInView4 && !isInView2 ? "scale(1.05)" : "none",
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
           }}
           className={style.topLayerWallpaper3}
           src={BeachCamp}

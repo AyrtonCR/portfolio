@@ -18,14 +18,7 @@
   color: black;
   overflow: clip;
 }
-.refHanger1 {
-  position: relative;
-  top: 30rem;
-  left: 2rem;
-  padding: 10rem;
-  border: 0.3rem solid black;
-  z-index: 92;
-}
+
 .backgroundContainer {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

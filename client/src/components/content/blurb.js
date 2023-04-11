@@ -7,7 +7,18 @@ const Blurb = () => {
   const bgRef = useRef(null);
 
   return (
-    <div ref={constraintsRef} className={style.blurbContainer}>
+    <motion.div
+      ref={constraintsRef}
+      className={style.blurbContainer}
+      initial={{ scale: 1 }}
+      animate={{ scale: [1, 1.015, 1] }}
+      transition={{
+        duration: 0.8,
+        delay: 4,
+        repeatDelay: 11.2,
+        repeat: Infinity,
+      }}
+    >
       <motion.h3
         drag
         dragConstraints={constraintsRef}
@@ -17,25 +28,12 @@ const Blurb = () => {
           transition: { duration: 0.3 },
         }}
         className={style.blurbTitle}
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, scale: 1 }}
         animate={{
           opacity: [0, 0.2, 1],
-          scale: [1, 1, 1],
-          y: [0, 10, 0],
         }}
         transition={{
           opacity: { duration: 1.7, delay: 1 },
-          scale: {
-            times: [0, 0.6, 1.2],
-            y: {
-              times: [0, 0.7, 1.2],
-              type: "spring",
-              stiffness: 400,
-              damping: 29,
-              repeatDelay: 5,
-              repeat: Infinity,
-            },
-          },
         }}
       >
         Ayrton Campbell
@@ -72,7 +70,7 @@ const Blurb = () => {
       >
         Web Developer{" "}
       </motion.h4>
-    </div>
+    </motion.div>
   );
 };
 
