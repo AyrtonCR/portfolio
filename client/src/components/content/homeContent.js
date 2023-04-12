@@ -81,7 +81,17 @@ const HomeContent = () => {
       </div>
 
       <div className={style.projectsGrid}>
-        <div className={style.mainGrid1}>
+        <motion.div
+          className={style.mainGrid1}
+          style={{
+            transform: isInView2 ? "none" : "translateX(-700px)",
+            opacity: isInView2 ? 1 : 0,
+            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+          // initial={{ x: -600, opacity: 0 }}
+          // animate={{ x: 0, opacity: 1 }}
+          // transition={{ duration: 1, delay: 0.2 }}
+        >
           <img
             className={style.gridImage}
             src={SurfboardsImage}
@@ -97,8 +107,14 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-        </div>
-        <div className={style.mainGrid2}>
+        </motion.div>
+        <motion.div
+          className={style.mainGrid2}
+          style={{
+            opacity: isInView2 ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           {" "}
           <img className={style.gridImage} src={MusicIcon} alt="egypt" />
           <p className={style.gridText}>
@@ -111,8 +127,15 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-        </div>
-        <div className={style.mainGrid3}>
+        </motion.div>
+        <motion.div
+          className={style.mainGrid3}
+          style={{
+            transform: isInView2 ? "none" : "translateX(700px)",
+            opacity: isInView2 ? 1 : 0,
+            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           <img className={style.gridImage} src={Vacation} alt="tree" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
@@ -124,26 +147,42 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className={style.AboutMeGrid}>
-        <div className={style.mainGrid4}>
-          <img className={style.gridImageGoat} src={GoatImage} alt="egypt" />
-          <p className={style.gridText}>
-            I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
-          </p>
-        </div>
+        <motion.div
+          className={style.mainGrid4Holder}
+          style={{
+            transform: isInView3 ? "none" : "translateY(150px)",
+            opacity: isInView3 ? 1 : 0,
+            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
+          <div className={style.mainGrid4}>
+            <img className={style.gridImageGoat} src={GoatImage} alt="egypt" />
+            <p className={style.gridText}>
+              I have a great passion for surfing and being a part of life near
+              the ocean. Even being near the ocean when in different conditions
+              is grounding part of my life. I have created a Site that is aimed
+              at new surfers looking to go out in the breaks around
+              Christchurch. The project was called 'Pegasus Bay Surf' and offers
+              information about our different beaches, surfboards, conditions
+              and has the template for a forum that surfers can use to keep each
+              other posted on the surf.
+            </p>
+          </div>
+        </motion.div>
       </div>
       <div className={style.FinalTwoGrid}>
-        <div className={style.mainGrid5}>
+        <motion.div
+          className={style.mainGrid5}
+          style={{
+            transform: isInView4 ? "none" : "translateX(-700px)",
+            opacity: isInView4 ? 1 : 0,
+            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           <img className={style.gridImage} src={Guitar} alt="surfboards" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
@@ -155,8 +194,15 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-        </div>
-        <div className={style.mainGrid6}>
+        </motion.div>
+        <motion.div
+          className={style.mainGrid6}
+          style={{
+            transform: isInView4 ? "none" : "translateX(700px)",
+            opacity: isInView4 ? 1 : 0,
+            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           <img
             className={style.gridImageCeltic}
             src={SurfboardsTrans}
@@ -172,7 +218,7 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@
   justify-self: center;
   align-self: center;
   max-width: 100%;
-  height: 50%;
+  height: 60%;
 }
 .refHanger1,
 .refHanger2,
@@ -88,7 +88,8 @@
   margin: 0 1rem;
 }
 .projectsGrid {
-  gap: 3rem;
+  display: grid;
+  gap: 2rem;
   margin-bottom: 7rem;
 }
 .AboutMeGrid {
@@ -102,6 +103,7 @@
 .mainGrid2,
 .mainGrid3 {
   display: grid;
+  align-self: center;
   border: 0.01rem solid white;
   border-radius: 1rem;
   box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
@@ -109,14 +111,21 @@
 /* About Me */
 .mainGrid4 {
   display: grid;
+  align-self: center;
   grid-template-columns: 0.4fr 0.6fr;
   border: 0.01rem solid white;
+  height: 30rem;
+  box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
   border-radius: 1rem;
   max-width: 100%;
+}
+.mainGrid4Holder {
+  display: grid;
+  width: 100%;
   margin-bottom: 5.5rem;
   margin-top: 3rem;
+
   height: 40rem;
-  box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
 }
 /* Last Two Grids */
 .mainGrid5,
