@@ -5,19 +5,21 @@
 .gridImage,
 .gridImageCeltic {
   display: grid;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   justify-self: center;
-  justify-items: CENTER;
-  justify-self: center;
-  width: 85%;
+  width: 55%;
   max-width: 20rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 .gridImageCeltic {
-  filter: invert(100%);
+  max-width: 17rem;
+  rotate: 0 1 0 180deg;
+}
+.gridImageGoat {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  max-width: 100%;
+  height: 50%;
 }
 .refHanger1,
 .refHanger2,
@@ -90,7 +92,7 @@
   margin-bottom: 7rem;
 }
 .AboutMeGrid {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 .FinalTwoGrid {
   gap: 3rem;
@@ -106,10 +108,14 @@
 }
 /* About Me */
 .mainGrid4 {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
   border: 0.01rem solid white;
   border-radius: 1rem;
+  max-width: 100%;
+  margin-bottom: 5.5rem;
+  margin-top: 3rem;
   height: 40rem;
-  margin-bottom: 8rem;
   box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
 }
 /* Last Two Grids */
@@ -143,7 +149,6 @@
   }
   /* AboutMe */
   .mainGrid4 {
-    grid-template-columns: 1fr;
   }
   /* FinalTwo */
   .mainGrid5,
@@ -163,14 +168,14 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media only screen and (min-width: 70rem) {
+@media only screen and (min-width: 60rem) {
   .mainGrid {
     max-width: fit-content;
   }
-}
-@media only screen and (min-width: 80rem) {
   .projectsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+@media only screen and (min-width: 80rem) {
 }

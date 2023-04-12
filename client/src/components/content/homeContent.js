@@ -5,8 +5,12 @@ import TreeImage from "../../utilities/images/tree.png";
 import GoatImage from "../../utilities/images/goat.png";
 import BeachImage from "../../utilities/images/beach.png";
 import Celtic from "../../utilities/images/celtic1.webp";
-import SurfboardsImage from "../../utilities/images/surfboards.png";
+import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
+import SurfboardsTrans from "../../utilities/images/surfboard-tr-10.png";
 import EgyptImage from "../../utilities/images/egypt.png";
+import Guitar from "../../utilities/images/esp-guitar.png";
+import MusicIcon from "../../utilities/images/vinyl-icon.png";
+import Vacation from "../../utilities/images/vacation.png";
 import ChchFog from "../../utilities/images/chch-fog-wp.avif";
 import LakeWP from "../../utilities/images/lake-wp.webp";
 import BeachCamp from "../../utilities/images/dahab-beach-camp.webp";
@@ -96,7 +100,7 @@ const HomeContent = () => {
         </div>
         <div className={style.mainGrid2}>
           {" "}
-          <img className={style.gridImage} src={EgyptImage} alt="egypt" />
+          <img className={style.gridImage} src={MusicIcon} alt="egypt" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
             ocean. Even being near the ocean when in different conditions is
@@ -109,7 +113,7 @@ const HomeContent = () => {
           </p>
         </div>
         <div className={style.mainGrid3}>
-          <img className={style.gridImage} src={TreeImage} alt="tree" />
+          <img className={style.gridImage} src={Vacation} alt="tree" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
             ocean. Even being near the ocean when in different conditions is
@@ -125,6 +129,7 @@ const HomeContent = () => {
 
       <div className={style.AboutMeGrid}>
         <div className={style.mainGrid4}>
+          <img className={style.gridImageGoat} src={GoatImage} alt="egypt" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
             ocean. Even being near the ocean when in different conditions is
@@ -135,12 +140,11 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-          <img className={style.gridImage} src={GoatImage} alt="egypt" />
         </div>
       </div>
       <div className={style.FinalTwoGrid}>
         <div className={style.mainGrid5}>
-          <img className={style.gridImage} src={BeachImage} alt="surfboards" />
+          <img className={style.gridImage} src={Guitar} alt="surfboards" />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
             ocean. Even being near the ocean when in different conditions is
@@ -153,6 +157,11 @@ const HomeContent = () => {
           </p>
         </div>
         <div className={style.mainGrid6}>
+          <img
+            className={style.gridImageCeltic}
+            src={SurfboardsTrans}
+            alt="egypt"
+          />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
             ocean. Even being near the ocean when in different conditions is
@@ -163,7 +172,6 @@ const HomeContent = () => {
             for a forum that surfers can use to keep each other posted on the
             surf.
           </p>
-          <img className={style.gridImageCeltic} src={Celtic} alt="egypt" />
         </div>
       </div>
     </div>
