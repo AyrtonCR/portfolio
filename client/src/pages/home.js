@@ -27,7 +27,6 @@ const Home = () => {
       <UpperNavBar />
       <Blurb />
       <HomeContent />
-      <LowerNavBar />
       <Footer />
     </div>
   );

@@ -8,6 +8,7 @@ import Celtic from "../../utilities/images/celtic1.webp";
 import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
 import SurfboardsTrans from "../../utilities/images/surfboard-tr-10.png";
 import EgyptImage from "../../utilities/images/egypt.png";
+import Dahab1 from "../../utilities/images/ras.webp";
 import Guitar from "../../utilities/images/esp-guitar.png";
 import MusicIcon from "../../utilities/images/vinyl-icon.png";
 import Vacation from "../../utilities/images/vacation.png";
@@ -68,15 +69,7 @@ const HomeContent = () => {
             transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
           }}
           className={style.topLayerWallpaper3}
-          src={BeachCamp}
-        ></motion.img>
-        <motion.img
-          style={{
-            transform: isInView4 ? "scale(1.15)" : "none",
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
-          className={style.topLayerWallpaper4}
-          src={Sunset}
+          src={Dahab1}
         ></motion.img>
       </div>
 
@@ -92,40 +85,83 @@ const HomeContent = () => {
           // animate={{ x: 0, opacity: 1 }}
           // transition={{ duration: 1, delay: 0.2 }}
         >
-          <img
+          <motion.img
             className={style.gridImage}
             src={SurfboardsImage}
             alt="surfboards"
+            whileHover={{
+              scale: 1.08,
+            }}
+            transition={{
+              rotate: { duration: 0.3 },
+              type: "spring",
+              stiffness: 400,
+              damping: 9,
+            }}
           />
           <p className={style.gridText}>
             I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
+            ocean. This project is aimed at new surfers looking to go out in the
+            breaks around Christchurch. <br /> <br /> The project is called
+            'Pegasus Bay Surf' and offers information about our different
+            beaches, surfboards, conditions and has the template for a forum
+            that surfers can use to keep each other posted on the surf. <br />{" "}
+            <br />
+            Click
+            <a
+              className={style.anchorTag}
+              target="_blank"
+              rel="noreferrer"
+              href="https://lsp-client.onrender.com/"
+            >
+              {" "}
+              here{" "}
+            </a>
+            to view the site.
           </p>
         </motion.div>
         <motion.div
           className={style.mainGrid2}
           style={{
             opacity: isInView2 ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 1.4s cubic-bezier(0.17, 0.1, 0.55, 1) 0.5s",
           }}
         >
           {" "}
-          <img className={style.gridImage} src={MusicIcon} alt="egypt" />
+          <motion.img
+            className={style.gridImage}
+            src={MusicIcon}
+            alt="egypt"
+            whileHover={{
+              scale: 1.08,
+            }}
+            whileTap={{ rotate: [0, 360] }}
+            transition={{
+              rotate: { duration: 0.8 },
+              type: "spring",
+              stiffness: 400,
+              damping: 9,
+            }}
+          />
           <p className={style.gridText}>
-            I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
+            This is a project I am looking to start soon will be a music player
+            with some additional functionality added. I am still thinking about
+            what features I will add, but it should be built with the same
+            technologies (Javascript, Node, CSS, HTML). <br /> <br />
+            It is possible I will be able to add some of my own music in an SQL
+            database that can be played using the music player.
+            <br />
+            <br /> Click
+            <a
+              className={style.anchorTag}
+              target="_blank"
+              rel="noreferrer"
+              href="https://lsp-client.onrender.com/"
+            >
+              {" "}
+              here{" "}
+            </a>
+            to view the site.
           </p>
         </motion.div>
         <motion.div
@@ -136,94 +172,93 @@ const HomeContent = () => {
             transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
           }}
         >
-          <img className={style.gridImage} src={Vacation} alt="tree" />
+          <motion.img
+            className={style.gridImage}
+            src={Vacation}
+            alt="tree"
+            whileHover={{
+              scale: 1.08,
+            }}
+            transition={{
+              rotate: { duration: 0.3 },
+              type: "spring",
+              stiffness: 400,
+              damping: 9,
+            }}
+          />
           <p className={style.gridText}>
-            I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
+            In my younger years I backpacked quite a lot and had a chance to
+            experience some really incredible countries. It has been a goal of
+            mine to try and capture some of these memories in a way I can
+            uniquely display to people. <br /> <br /> This project will be an
+            image viewer / library with some additional features that make it
+            appealing for a user to navigate. <br /> <br />
+            Click
+            <a
+              className={style.anchorTag}
+              target="_blank"
+              rel="noreferrer"
+              href="https://lsp-client.onrender.com/"
+            >
+              {" "}
+              here{" "}
+            </a>
+            to view the site.
           </p>
         </motion.div>
       </div>
 
       <div className={style.AboutMeGrid}>
         <motion.div
-          className={style.mainGrid4Holder}
+          className={style.mainGrid4}
           style={{
-            transform: isInView3 ? "none" : "translateY(150px)",
             opacity: isInView3 ? 1 : 0,
-            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 2.3s 0.3s",
           }}
         >
-          <div className={style.mainGrid4}>
-            <img className={style.gridImageGoat} src={GoatImage} alt="egypt" />
-            <p className={style.gridText}>
-              I have a great passion for surfing and being a part of life near
-              the ocean. Even being near the ocean when in different conditions
-              is grounding part of my life. I have created a Site that is aimed
-              at new surfers looking to go out in the breaks around
-              Christchurch. The project was called 'Pegasus Bay Surf' and offers
-              information about our different beaches, surfboards, conditions
-              and has the template for a forum that surfers can use to keep each
-              other posted on the surf.
-            </p>
-          </div>
+          <motion.h4
+            className={style.mainGrid4Heading}
+            style={{
+              transform: isInView3 ? "none" : "translateX(-750px)",
+              opacity: isInView3 ? 1 : 0,
+              transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+          >
+            Dahab, Egypt
+          </motion.h4>
+          <motion.p
+            className={style.gridTextEgypt}
+            style={{
+              transform: isInView3 ? "none" : "translateX(-1150px)",
+              opacity: isInView3 ? 1 : 0,
+              transition: "all 1.9s cubic-bezier(0.17, 0.2, 0.3, 1) 0.3s",
+            }}
+          >
+            This project is a tourism inspired website for a place I visited in
+            Egypt called Dahab. <br /> <br />
+            Dahab is an beautiful small fishing town on the south-east coast of
+            the Sinai Peninsula where life is slow. <br /> <br /> Formerly a
+            fishing village, it is now well known for having one of the best
+            diving locations in the world. <br /> <br /> Click{" "}
+            <a
+              className={style.anchorTag}
+              target="_blank"
+              rel="noreferrer"
+              href="https://lsp-client.onrender.com/"
+            >
+              {" "}
+              here{" "}
+            </a>{" "}
+            to view the project.
+          </motion.p>
         </motion.div>
-      </div>
-      <div className={style.FinalTwoGrid}>
-        <motion.div
-          className={style.mainGrid5}
-          style={{
-            transform: isInView4 ? "none" : "translateX(-700px)",
-            opacity: isInView4 ? 1 : 0,
-            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-        >
-          <img className={style.gridImage} src={Guitar} alt="surfboards" />
-          <p className={style.gridText}>
-            I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
-          </p>
-        </motion.div>
-        <motion.div
-          className={style.mainGrid6}
-          style={{
-            transform: isInView4 ? "none" : "translateX(700px)",
-            opacity: isInView4 ? 1 : 0,
-            transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-        >
-          <img
-            className={style.gridImageCeltic}
-            src={SurfboardsTrans}
-            alt="egypt"
-          />
-          <p className={style.gridText}>
-            I have a great passion for surfing and being a part of life near the
-            ocean. Even being near the ocean when in different conditions is
-            grounding part of my life. I have created a Site that is aimed at
-            new surfers looking to go out in the breaks around Christchurch. The
-            project was called 'Pegasus Bay Surf' and offers information about
-            our different beaches, surfboards, conditions and has the template
-            for a forum that surfers can use to keep each other posted on the
-            surf.
-          </p>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
     </div>
   );
 };
 
+// EXPORT BELOW FUNCTION //
 const TopLayerWallpaper = (props) => {
   return (
     <img className={props.className} src={props.img} alt="top-layer"></img>

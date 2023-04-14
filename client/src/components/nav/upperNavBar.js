@@ -2,7 +2,6 @@ import style from "./upperNavBar.css";
 
 import { useState, useEffect, useRef } from "react";
 import User from "../../utilities/images/celtic1.webp";
-import Portrait from "../../utilities/images/goat.png";
 import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
 
