@@ -6,6 +6,7 @@
   /* font-family: "Space Grotesk", sans-serif; */
   font-family: "Hind", sans-serif;
 }
+
 @media only screen and (min-width: 12.5rem) {
   .gridContainer {
     display: grid;
@@ -113,6 +114,8 @@
   .mainGrid2,
   .mainGrid3 {
     display: grid;
+    margin: 0 1rem;
+    justify-items: center;
     border: 0.01rem solid white;
     border-radius: 1rem;
     box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
@@ -194,6 +197,58 @@
 
 /* FIRST BREAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK */
 
+@media only screen and (min-width: 17.5rem) {
+}
+@media only screen and (min-width: 25.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    display: grid;
+    margin: 0 4rem;
+  }
+}
+@media only screen and (min-width: 33.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    display: grid;
+    margin: 0 7rem;
+  }
+}
+@media only screen and (min-width: 42.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    display: grid;
+    margin: 0 11rem;
+  }
+}
+@media only screen and (min-width: 48.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    display: grid;
+    margin: 0 13rem;
+  }
+}
+@media only screen and (min-width: 55.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    display: grid;
+    margin: 0 17rem;
+  }
+  @media only screen and (min-width: 55.5rem) {
+    .mainGrid1,
+    .mainGrid2,
+    .mainGrid3 {
+      display: unset;
+      display: none;
+      margin: 20rem;
+    }
+  }
+}
+/* RESIZING SLIDER */
 @media only screen and (min-width: 34rem) {
   .gridImage,
   .gridImageBoard,
@@ -256,7 +311,6 @@
   .mainGrid1,
   .mainGrid2,
   .mainGrid3 {
-    display: none;
     border: 0.01rem solid white;
     border-radius: 1rem;
     box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
@@ -335,7 +389,7 @@
   }
   .projectsGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .AboutMeGrid {
     display: grid;
@@ -344,13 +398,6 @@
   .FinalTwoGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (min-width: 55.5rem) {
-  .mainGrid1,
-  .mainGrid2,
-  .mainGrid3 {
-    display: grid;
   }
 }
 @media only screen and (min-width: 60rem) {

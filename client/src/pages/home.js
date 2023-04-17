@@ -17,6 +17,7 @@ import BlackPoly5 from ".././utilities/images/black-low-poly-geometric.png";
 import AbFlower from ".././utilities/images/abstract-flower.png";
 import SVGCut from "./svgCut";
 import stylesheet from "./svgCut.css";
+import Slider from "../components/carousel/carousel";
 // import React, { useState, useEffect } from "react";
 
 const Home = () => {

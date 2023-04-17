@@ -2,405 +2,176 @@
   list-style-type: none;
 }
 
-.portraitImage {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.dropdownMenu {
-  position: relative;
-  top: 20px;
-  background-color: rgba(181, 181, 181, 0.412);
-  border-radius: 1rem;
-  padding: 10px 20px;
-  width: 9rem;
-  z-index: 9;
-}
-
-.dropdownMenu::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: 20px;
-  height: 20px;
-  width: 20px;
-  background: var(--secondary-bg);
-  transform: rotate(45deg);
-}
-
-h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px 0;
-  font-weight: 500;
-  font-size: 18px;
-  color: white;
-  line-height: 1.2rem;
-}
-
-h3 span {
-  font-size: 14px;
-  color: var(--secondary-text-color);
-  font-weight: 400;
-}
-
-.dropdownMenu ul li {
-  padding: 10px 0;
-  border-top: 0.01rem solid white;
-}
-
-.dropdownMenu ul li:hover a {
-  color: red;
-  cursor: pointer;
-}
-
-.dropdownMenu ul li:hover img {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.dropdownItem {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 0.1rem;
-  font-size: 0.7rem;
-}
-
-.dropdownItem img {
-  max-width: 1.3rem;
-  opacity: 0.5;
-  transition: all 0.5s ease;
-}
-
-.dropdownItem a {
-  max-width: 100%;
-  margin-left: 0.5rem;
-  transition: all 0.5s ease;
-}
-
-.dropdownMenu.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: all 0.5s ease;
-}
-
-.dropdownMenu.inactive {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: all 0.5s ease;
-}
-/* abOVE */
-
-.lowerNavLinksContainer {
-  display: grid;
-  align-self: center;
-  justify-content: center;
-  max-width: 100%;
-  width: fit-content;
-  z-index: 1000;
-  position: relative;
-  height: 3.5rem;
-  width: 5rem;
-  justify-items: center;
-  /* /* justify-content: center; */
-
-  align-items: center;
-}
-
-.lowerNavContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  max-width: 30%;
-  gap: 4rem;
-  padding: 0.01rem;
-  margin-bottom: 2rem;
-}
-.openMenuTitle {
-  display: grid;
-  grid-template-columns: 1fr 0.1fr;
-  align-items: center;
-}
-.openMenuTitle,
-.lowerNavSingleLinkText {
-  font-size: 1rem;
-  padding: 0;
-  width: fit-content;
-  display: grid;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-}
-.openMenuTitle:hover,
-.lowerNavSingleLinkText:hover {
-  border-bottom: 0.01rem solid white;
-  font-size: 0.9rem;
-}
-.menuTrigger {
-  margin-top: 0.2rem;
-  display: grid;
-  justify-self: center;
-  align-content: center;
-}
-.lowerNavSingleLink {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  position: relative;
-  padding: 0rem;
-  margin: 0rem;
-}
-.lowerNavItem {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  justify-self: center;
-  padding: 0 1rem;
-  max-width: 100%;
-  width: 8rem;
-}
-
-.lowerNavLink {
-  display: grid;
-  align-self: center;
-  justify-content: center;
-  border-bottom: 0.01rem solid black;
-  text-decoration: none;
-  color: black;
-  font-size: 0.6rem;
-  max-width: 100%;
-}
-
-@media only screen and (min-width: 13.5rem) {
-  .NavBar .Navigation {
-    display: none;
+@media only screen and (min-width: 12.5rem) {
+  .portraitImage {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
   }
 
-  .NavBar .MobileNavigation {
-    display: grid;
-    background-color: #767370;
-    padding-top: 1rem;
-  }
-  .NavBar nav ul {
-    display: grid;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 40%;
-    margin: 0 0.2rem;
-    background: #293232;
-    border: 0.1rem solid rgb(0, 0, 0);
-    box-shadow: 0 0 1rem -0.1rem;
-    border-radius: 0.25rem;
+  .dropdownMenu {
+    position: relative;
+    top: -350px;
+    background-color: rgba(181, 181, 181, 0.412);
+    border-radius: 1rem;
+    padding: 10px 20px;
+    width: 9rem;
     z-index: 9;
   }
-  .dropdownUl {
-    padding: 0.5rem;
-  }
-  .Hamburger {
-    width: 1.3rem;
-  }
-  .NavBar nav ul li {
-    align-items: center;
-  }
 
-  .NavBar {
-  }
-
-  .NavBar .MobileNavigation .Hamburger {
+  .dropdownMenu::before {
+    content: "";
     position: absolute;
-    top: 2%;
-    right: 5%;
-    cursor: pointer;
-  }
-  .header {
-    background: #767370;
-  }
-  .navbarContainer {
-    display: grid;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
   }
 
-  .headerTitle {
-    text-decoration: none;
-  }
-
-  .logo {
-    width: 1.5rem;
-    margin-top: 1rem;
-    padding: 0 1rem;
-  }
-  .mobileLogo {
-    width: 1.5rem;
-    padding: 0 1rem;
-    transition: all 0.3s ease;
-  }
-  .mobileLogo:hover {
-    transform: scale(1.1);
-  }
-  .navbarItem {
-    text-align: center;
-    align-self: center;
-    margin: 0.6rem 0.3rem;
-    transition: all 0.3s ease;
-    width: fit-content;
-    border-radius: 0.25rem;
-  }
-  .nav {
-    display: contents;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.7rem;
+  h3 {
     width: 100%;
-    list-style-type: none;
-    padding: 1rem;
-    white-space: nowrap;
     text-align: center;
-    margin: 0;
-    padding: 0rem;
-    list-style-type: none;
-  }
-
-  .navLink {
-    display: block;
-    position: relative;
-    font-size: 0.5rem;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
     color: white;
-    text-shadow: 0.12rem 0.12rem 2.5rem;
-    white-space: nowrap;
-    padding: 0.3rem 0.7rem;
-    transition: all 0.3s ease;
+    line-height: 1.2rem;
+  }
+
+  h3 span {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+  }
+
+  .dropdownMenu ul li {
+    padding: 10px 0;
+    border-top: 0.01rem solid white;
+  }
+
+  .dropdownMenu ul li:hover a {
+    color: red;
     cursor: pointer;
-    border-radius: 0.35rem;
-    text-decoration: none;
+  }
+
+  .dropdownMenu ul li:hover img {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .dropdownItem {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .dropdownItem img {
+    max-width: 1.3rem;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .dropdownItem a {
+    max-width: 100%;
+    margin-left: 0.5rem;
+    transition: all 0.5s ease;
+  }
+
+  .dropdownMenu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+
+  .dropdownMenu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  /* abOVE */
+
+  .lowerNavLinksContainer {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
     width: fit-content;
-    transition: all 0.3s ease;
-    padding: 0rem 1rem;
-  }
-  .navLink:hover {
-    color: #ed7a0e;
-  }
-  .navLink:hover {
-  }
-
-  .navbarItem:active,
-  .navbarItem:hover {
-    transform: scale(1.2);
-    background-color: #293232;
-    transform: scale(1.2);
-  }
-  .NavBar .Hamburger {
-    transition: all 0.2s ease-in-out;
-  }
-  .NavBar:hover .Hamburger:hover {
-    transform: scale(1.4);
-  }
-}
-@media only screen and (min-width: 21.5rem) {
-  .mobileLogo {
-    width: 1.7rem;
-  }
-  .Hamburger {
-    width: 1.3rem;
-  }
-  .navLink {
-    display: block;
-  }
-  .NavBar nav ul {
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 55rem) {
-  .NavBar .MobileNavigation {
-    display: none;
-  }
-
-  .NavBar .Navigation {
-    display: grid;
-    border-bottom: 0.07rem solid rgb(80, 80, 80);
-  }
-  .NavBar nav ul {
-    display: grid;
-    position: unset;
-    top: unset;
-    right: unset;
-    width: 100%;
-    margin: 0rem;
-    background: none;
-    border: unset;
-    box-shadow: unset;
-    border-radius: 0;
-  }
-
-  .NavBar nav ul li {
+    z-index: 1000;
+    position: relative;
+    height: 3.5rem;
+    width: 4rem;
+    justify-items: center;
     align-items: center;
   }
 
-  .NavBar {
-    opacity: none;
+  .lowerNavContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 30%;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
-  .navbarItem {
+  .openMenuTitle {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    align-items: center;
+  }
+  .openMenuTitle,
+  .lowerNavSingleLinkText {
+    font-size: 0.8rem;
+    padding: 0;
+    width: fit-content;
+    display: grid;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
+  .openMenuTitle:hover,
+  .lowerNavSingleLinkText:hover {
+    border-bottom: 0.01rem solid white;
+    font-size: 0.9rem;
+  }
+  .lowerMenuTrigger {
+    margin-top: 0.4rem;
     display: grid;
     justify-self: center;
+    align-content: center;
   }
-  .navbarItem .logo {
+  .lowerNavSingleLink {
     display: grid;
-    align-self: center;
-    justify-self: center;
-    width: 2rem;
-    margin-top: 0rem;
-    background: none;
-  }
-  .navbarItem:hover {
-    background-color: unset;
-  }
-
-  .logo {
-    transition: all 0.3s ease;
-  }
-  .logo:hover {
-    transform: scale(1.2);
-  }
-  .NavBar {
-    background-color: #767370;
-    padding: 0 1rem;
-  }
-}
-@media only screen and (min-width: 58rem) {
-  .navLink {
-    padding: 0.2rem 0.5rem;
-  }
-  .NavBar {
-    background-color: #767370;
-    padding: 0 1rem;
-  }
-}
-@media only screen and (min-width: 60rem) {
-  .navLink {
-    transition: all 0.3s ease;
-  }
-
-  .navLink:hover {
-    transform: scale(1.2);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    position: relative;
+    padding: 0rem;
+    margin: 0rem;
   }
 }
 
-@media only screen and (min-width: 80rem) {
-  .navLink {
+@media only screen and (min-width: 34rem) {
+  .openMenuTitle,
+  .lowerNavSingleLinkText {
     font-size: 1rem;
+  }
+  .lowerNavContainer {
+    gap: 3rem;
+  }
+  .lowerMenuTrigger {
+    margin-top: 0.2rem;
   }
 }

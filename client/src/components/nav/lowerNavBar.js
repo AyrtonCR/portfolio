@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import User from "../../utilities/images/celtic1.webp";
 import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { IoIosArrowDropup } from "react-icons/io";
 
 const UpperNavBar = () => {
   const [open, setOpen] = useState(false);
@@ -48,13 +49,13 @@ const UpperNavBar = () => {
       </div>
       <div className="lowerNavLinksContainer">
         <div
-          className="menuTrigger"
+          className="lowerMenuTrigger"
           onClick={() => {
             setOpen(!open);
           }}
         >
           <h3 className="openMenuTitle">
-            Projects <IoIosArrowDropdown />
+            Projects &nbsp; <IoIosArrowDropup />
           </h3>
         </div>
 

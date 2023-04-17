@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.dropdownMenu {
+.upperDropdownMenu {
   position: relative;
   top: 20px;
   background-color: rgba(181, 181, 181, 0.412);
@@ -23,7 +23,7 @@
   z-index: 9;
 }
 
-.dropdownMenu::before {
+.upperDropdownMenu::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -51,22 +51,22 @@ h3 span {
   font-weight: 400;
 }
 
-.dropdownMenu ul li {
+.upperDropdownMenu ul li {
   padding: 10px 0;
   border-top: 0.01rem solid white;
 }
 
-.dropdownMenu ul li:hover a {
+.upperDropdownMenu ul li:hover a {
   color: red;
   cursor: pointer;
 }
 
-.dropdownMenu ul li:hover img {
+.upperDropdownMenu ul li:hover img {
   opacity: 1;
   cursor: pointer;
 }
 
-.dropdownItem {
+.upperDropdownItem {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
   align-items: center;
@@ -76,26 +76,26 @@ h3 span {
   font-size: 0.7rem;
 }
 
-.dropdownItem img {
+.upperDropdownItem img {
   max-width: 1.3rem;
   opacity: 0.5;
   transition: all 0.5s ease;
 }
 
-.dropdownItem a {
+.upperDropdownItem a {
   max-width: 100%;
   margin-left: 0.5rem;
   transition: all 0.5s ease;
 }
 
-.dropdownMenu.active {
+.upperDropdownMenu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   transition: all 0.5s ease;
 }
 
-.dropdownMenu.inactive {
+.upperDropdownMenu.inactive {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -121,21 +121,23 @@ h3 span {
 .upperNavContainer {
   display: grid;
   justify-self: center;
-  grid-template-columns: 1fr 1fr 0.6fr;
+  grid-template-columns: 1fr 1fr 0.3fr;
   max-width: 50rem;
   padding-bottom: 0.01rem;
   padding: 0 1.7rem;
   border-bottom: 0.01rem solid white;
   margin-bottom: 2rem;
 }
-.openMenuTitle {
+.upperOpenMenuTitle {
+  font-size: 0.9rem;
   display: grid;
   grid-template-columns: 1fr 0.1fr;
   align-items: center;
 }
-.openMenuTitle,
-.upperNavSingleLinkText {
-  font-size: 0.8rem;
+.upperOpenMenuTitle,
+.upperNavSingleLinkText,
+.upperNavSingleLinkTextCV {
+  font-size: 0.9rem;
   padding: 0.1rem 0.2rem;
   display: grid;
   cursor: pointer;
@@ -144,18 +146,20 @@ h3 span {
   text-decoration: none;
   color: white;
 }
-.openMenuTitle:hover,
+
+.upperOpenMenuTitle:hover,
 .upperNavSingleLinkText:hover {
   border-bottom: 0.01rem solid white;
   font-size: 0.9rem;
 }
 .menuTrigger {
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
   display: grid;
   justify-self: center;
   align-content: center;
 }
-.upperNavSingleLink {
+.upperNavSingleLink,
+.upperNavSingleLinkCV {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -164,6 +168,7 @@ h3 span {
   padding: 0rem;
   margin: 0rem;
 }
+
 .upperNavItem {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -208,7 +213,7 @@ h3 span {
     border-radius: 0.25rem;
     z-index: 9;
   }
-  .dropdownUl {
+  .upperDropdownUl {
     padding: 0.5rem;
   }
   .Hamburger {

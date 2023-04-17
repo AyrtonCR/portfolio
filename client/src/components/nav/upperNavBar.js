@@ -1,5 +1,4 @@
-import style from "./upperNavBar.css";
-
+import "./upperNavBar.css";
 import { useState, useEffect, useRef } from "react";
 import User from "../../utilities/images/celtic1.webp";
 import { motion } from "framer-motion";
@@ -43,13 +42,13 @@ const UpperNavBar = () => {
             setOpen(!open);
           }}
         >
-          <h3 className="openMenuTitle">
-            Projects <IoIosArrowDropdown />
+          <h3 className="upperOpenMenuTitle">
+            Projects &nbsp; <IoIosArrowDropdown />
           </h3>
         </div>
 
-        <div className={`dropdownMenu ${open ? "active" : "inactive"}`}>
-          <ul className="dropdownUl">
+        <div className={`upperDropdownMenu ${open ? "active" : "inactive"}`}>
+          <ul className="upperDropdownUl">
             <DropdownItem img={User} text={"Local Surf Project"} />
             <DropdownItem img={User} text={"Portfolio Project"} />
             <DropdownItem img={User} text={"Other Project"} />
@@ -81,9 +80,10 @@ const UpperNavBar = () => {
     </motion.div>
   );
 };
+
 function DropdownItem(props) {
   return (
-    <li className="dropdownItem">
+    <li className="upperDropdownItem">
       <img src={props.img}></img>
       <a> {props.text}</a>
     </li>

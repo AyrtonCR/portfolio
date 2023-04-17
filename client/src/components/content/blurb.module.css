@@ -1,39 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
-.blurbContainer {
-  width: 100%;
-  display: grid;
-  justify-self: center;
-  padding: 1rem 1rem;
-  margin-bottom: 8rem;
+@media only screen and (min-width: 14rem) {
+  .blurbContainer {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    padding: 1rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .blurbTitle {
+    color: white;
+    cursor: grab;
+    display: grid;
+    justify-self: center;
+    width: fit-content;
+    font-size: 1.8rem;
+    font-family: "Poiret One", cursive;
+    /* text-shadow: -5.12rem 1.12rem 9rem black; */
+    text-shadow: 8rem 8rem 8rem black;
+    margin: 0rem;
+  }
+
+  .blurbText {
+    cursor: grab;
+    width: fit-content;
+    display: grid;
+    justify-self: center;
+    margin: 0rem;
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    font-size: 1rem;
+    font-family: "Poiret One", cursive;
+    text-shadow: 0 0 0rem black;
+    color: white;
+  }
 }
 
-.blurbTitle {
-  color: white;
-  cursor: grab;
-  display: grid;
-  justify-self: center;
-  width: fit-content;
-  font-size: 1.8rem;
-  font-family: "Poiret One", cursive;
-  /* text-shadow: -5.12rem 1.12rem 9rem black; */
-  text-shadow: 8rem 8rem 8rem black;
-  margin: 0rem;
-}
-
-.blurbText {
-  cursor: grab;
-  width: fit-content;
-  display: grid;
-  justify-self: center;
-  margin: 0rem;
-  margin-bottom: 26rem;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  font-size: 1rem;
-  font-family: "Poiret One", cursive;
-  text-shadow: 0 0 0rem black;
-  color: white;
+@media only screen and (min-width: 34rem) {
+  .blurbContainer {
+    margin-bottom: 28rem;
+  }
 }
