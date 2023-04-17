@@ -16,9 +16,10 @@
 .upperDropdownMenu {
   position: relative;
   top: 20px;
-  background-color: rgba(181, 181, 181, 0.412);
-  border-radius: 1rem;
-  padding: 10px 20px;
+  background-color: rgba(136, 136, 136, 0.83);
+  border: 0.02rem solid black;
+  border-radius: 0.5rem;
+  padding: 6px 8px;
   width: 9rem;
   z-index: 9;
 }
@@ -50,14 +51,16 @@ h3 span {
   color: var(--secondary-text-color);
   font-weight: 400;
 }
-
+.upperDropdownUl {
+  padding: 0 0.5rem;
+}
 .upperDropdownMenu ul li {
   padding: 10px 0;
-  border-top: 0.01rem solid white;
+  border-bottom: 0.01rem solid white;
 }
 
 .upperDropdownMenu ul li:hover a {
-  color: red;
+  color: rgb(252, 252, 252);
   cursor: pointer;
 }
 
@@ -73,7 +76,7 @@ h3 span {
   justify-content: center;
   align-content: center;
   margin: 0.1rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .upperDropdownItem img {
@@ -214,6 +217,7 @@ h3 span {
     z-index: 9;
   }
   .upperDropdownUl {
+    margin: 0rem;
     padding: 0.5rem;
   }
   .Hamburger {

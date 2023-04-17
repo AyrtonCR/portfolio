@@ -238,7 +238,7 @@
     display: grid;
     margin: 0 17rem;
   }
-  @media only screen and (min-width: 55.5rem) {
+  @media only screen and (min-width: 65.5rem) {
     .mainGrid1,
     .mainGrid2,
     .mainGrid3 {
@@ -314,6 +314,7 @@
     border: 0.01rem solid white;
     border-radius: 1rem;
     box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
+    margin-bottom: 4rem;
   }
   /* About Me */
   .mainGrid4 {

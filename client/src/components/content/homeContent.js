@@ -240,7 +240,7 @@ const HomeContent = () => {
                 transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
               }}
             >
-              Dahab, Egypt
+              Sinai Sun Tourism
             </motion.h4>
             <motion.p
               className={style.gridTextEgypt}
@@ -250,13 +250,14 @@ const HomeContent = () => {
                 transition: "all 1.9s cubic-bezier(0.17, 0.2, 0.3, 1) 0.3s",
               }}
             >
-              This project is a tourism inspired website for a place I visited
-              in Egypt called Dahab. <br /> <br />
+              This project is a tourism inspired website for a place called
+              Dahab in Egypt.
+              <br /> <br />
               Dahab is an beautiful small fishing town on the south-east coast
-              of the Sinai Peninsula where life is slow. <br /> <br /> Formerly
-              a fishing village, it is now well known for having one of the best
-              diving locations in the world, with the incredible 'Blue Hole'.{" "}
-              <br /> <br /> Click{" "}
+              of the Sinai Peninsula where life is cruisy and slow. <br />{" "}
+              <br /> Formerly a fishing village, it is now well known for having
+              one of the best diving locations in the world, the incredible
+              'Blue Hole'. <br /> <br /> Click{" "}
               <a
                 className={style.anchorTag}
                 target="_blank"

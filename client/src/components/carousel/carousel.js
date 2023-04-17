@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from "./carouselstyle.module.css";
 import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
+import Egypt from "../../utilities/images/egypt.png";
 import MusicIcon from "../../utilities/images/vinyl-icon.png";
 import Vacation from "../../utilities/images/vacation.png";
 
@@ -137,6 +138,43 @@ const Slider = () => {
             here{" "}
           </a>
           to view the site.
+        </p>
+      </div>
+      <div className={style.mainGrid3}>
+        <img
+          className={style.gridImage}
+          src={Egypt}
+          alt="tree"
+          whileHover={{
+            scale: 1.08,
+          }}
+          transition={{
+            rotate: { duration: 0.3 },
+            type: "spring",
+            stiffness: 400,
+            damping: 9,
+          }}
+        />
+        <h4 className={style.projectGridTitle}>Sinai Sun Tourism</h4>
+        <p className={style.gridText}>
+          This project is a tourism inspired website for a place called Dahab in
+          Egypt.
+          <br /> <br />
+          Dahab is an beautiful small fishing town on the south-east coast of
+          the Sinai Peninsula where life is cruisy and slow. <br /> <br />{" "}
+          Formerly a fishing village, it is now well known for having one of the
+          best diving locations in the world, the incredible 'Blue Hole'. <br />{" "}
+          <br /> Click{" "}
+          <a
+            className={style.anchorTag}
+            target="_blank"
+            rel="noreferrer"
+            href="https://lsp-client.onrender.com/"
+          >
+            {" "}
+            here{" "}
+          </a>{" "}
+          to view the project.
         </p>
       </div>
     </Carousel>

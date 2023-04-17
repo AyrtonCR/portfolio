@@ -49,7 +49,7 @@ const UpperNavBar = () => {
       </div>
       <div className="lowerNavLinksContainer">
         <div
-          className="lowerMenuTrigger"
+          className="menuTrigger"
           onClick={() => {
             setOpen(!open);
           }}

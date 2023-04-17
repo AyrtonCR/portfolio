@@ -240,6 +240,7 @@
   .mainGrid {
     padding: 1rem;
     margin: 0 1rem;
+    display: none;
   }
   .projectsGrid {
     gap: 2rem;
@@ -255,7 +256,10 @@
   /* My Projects */
   .mainGrid1,
   .mainGrid2,
-  .mainGrid3 {
+  .mainGrid3,
+  .mainGrid4,
+  .mainGrid5,
+  .mainGrid6 {
     display: none;
     border: 0.01rem solid white;
     border-radius: 1rem;
@@ -347,20 +351,24 @@
   }
 }
 @media only screen and (min-width: 55.5rem) {
-  .mainGrid1,
-  .mainGrid2,
-  .mainGrid3 {
-    display: grid;
-  }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 65.5rem) {
   .mainGrid {
     max-width: fit-content;
+    display: unset;
   }
   .projectsGrid {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-auto-flow: column;
+  }
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3,
+  .mainGrid4,
+  .mainGrid5,
+  .mainGrid6 {
+    display: grid;
   }
 }
 @media only screen and (min-width: 80rem) {
