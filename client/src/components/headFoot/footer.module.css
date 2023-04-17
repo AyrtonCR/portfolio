@@ -4,16 +4,14 @@
     display: grid;
     max-width: 100%;
     width: 100%;
-    padding: 0.5rem 1rem;
-    padding-left: 3rem;
-    padding-top: 2rem;
+    padding: 1rem;
     background: rgb(0, 0, 0);
   }
 
   .footerText,
   .footerTextEmail,
   .footerTextCopyright {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0.7rem 0;
     color: white;
     text-shadow: 0.12rem 0.12rem 2rem;
@@ -25,12 +23,26 @@
     color: rgb(72, 137, 249);
   }
   .footerNameTitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .footerName {
   }
 }
-
+@media only screen and (min-width: 21.5rem) {
+  .footerContainer {
+    padding: 0.5rem 1rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+  }
+  .footerText,
+  .footerTextEmail,
+  .footerTextCopyright {
+    font-size: 0.9rem;
+  }
+  .footerNameTitle {
+    font-size: 1.1rem;
+  }
+}
 @media only screen and (min-width: 48rem) {
   .footerContainer {
     border: 0.1rem solid black;

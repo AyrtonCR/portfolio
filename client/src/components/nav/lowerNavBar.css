@@ -114,7 +114,7 @@
     width: fit-content;
     z-index: 1000;
     position: relative;
-    height: 3.5rem;
+    height: 3rem;
     width: 4rem;
     justify-items: center;
     align-items: center;
@@ -124,7 +124,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     max-width: 30%;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 2rem;
   }
   .openMenuTitle {
@@ -134,7 +134,7 @@
   }
   .openMenuTitle,
   .lowerNavSingleLinkText {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0;
     width: fit-content;
     display: grid;
@@ -165,7 +165,14 @@
     margin: 0rem;
   }
 }
-
+@media only screen and (min-width: 21.5rem) {
+  .lowerNavSingleLinkText {
+    font-size: 0.8rem;
+  }
+  .lowerNavContainer {
+    gap: 1rem;
+  }
+}
 @media only screen and (min-width: 34rem) {
   .openMenuTitle,
   .lowerNavSingleLinkText {
@@ -176,5 +183,8 @@
   }
   .lowerMenuTrigger {
     margin-top: 0.2rem;
+  }
+  .lowerNavLinksContainer {
+    height: 3.5rem;
   }
 }

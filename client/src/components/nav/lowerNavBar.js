@@ -94,7 +94,7 @@ const UpperNavBar = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/ayrton-campbell/"
+          href="https://github.com/AyrtonCR"
           class="lowerNavSingleLinkText"
         >
           GitHub
