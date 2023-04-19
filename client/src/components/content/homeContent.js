@@ -49,8 +49,6 @@ const HomeContent = () => {
   const ref4 = useRef(null);
   const isInView4 = useInView(ref4);
 
-  console.log(trigger);
-
   return (
     <>
       <Slider />

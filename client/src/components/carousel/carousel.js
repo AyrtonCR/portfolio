@@ -34,15 +34,6 @@ const Slider = () => {
           className={style.gridImage}
           src={SurfboardsImage}
           alt="surfboards"
-          whileHover={{
-            scale: 1.08,
-          }}
-          transition={{
-            rotate: { duration: 0.3 },
-            type: "spring",
-            stiffness: 400,
-            damping: 9,
-          }}
         />
         <p className={style.projectGridTitle}>Pegasus Bay Surf</p>
         <p className={style.gridText}>
@@ -67,21 +58,7 @@ const Slider = () => {
       </div>
       <div className={style.mainGrid2}>
         {" "}
-        <img
-          className={style.gridImage}
-          src={MusicIcon}
-          alt="egypt"
-          whileHover={{
-            scale: 1.08,
-          }}
-          whileTap={{ rotate: [0, 360] }}
-          transition={{
-            rotate: { duration: 0.8 },
-            type: "spring",
-            stiffness: 400,
-            damping: 9,
-          }}
-        />
+        <img className={style.gridImage} src={MusicIcon} alt="egypt" />
         <p className={style.projectGridTitle}>Groovy Tunes Music Player</p>
         <p className={style.gridText}>
           This is a project I am looking to start soon will be a music player
@@ -105,20 +82,7 @@ const Slider = () => {
         </p>
       </div>
       <div className={style.mainGrid3}>
-        <img
-          className={style.gridImage}
-          src={Vacation}
-          alt="tree"
-          whileHover={{
-            scale: 1.08,
-          }}
-          transition={{
-            rotate: { duration: 0.3 },
-            type: "spring",
-            stiffness: 400,
-            damping: 9,
-          }}
-        />
+        <img className={style.gridImage} src={Vacation} alt="tree" />
         <p className={style.projectGridTitle}>Display Gallery</p>
         <p className={style.gridText}>
           In my younger years I backpacked quite a lot and had a chance to
@@ -141,20 +105,7 @@ const Slider = () => {
         </p>
       </div>
       <div className={style.mainGrid3}>
-        <img
-          className={style.gridImage}
-          src={Egypt}
-          alt="tree"
-          whileHover={{
-            scale: 1.08,
-          }}
-          transition={{
-            rotate: { duration: 0.3 },
-            type: "spring",
-            stiffness: 400,
-            damping: 9,
-          }}
-        />
+        <img className={style.gridImage} src={Egypt} alt="tree" />
         <h4 className={style.projectGridTitle}>Sinai Sun Tourism</h4>
         <p className={style.gridText}>
           This project is a tourism inspired website for a place called Dahab in

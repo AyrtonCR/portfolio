@@ -66,22 +66,22 @@ const UpperNavBar = () => {
         </div>
       </div>
 
-      <div class="upperNavSingleLink">
+      <div className="upperNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/ayrton-campbell/"
-          class="upperNavSingleLinkText"
+          className="upperNavSingleLinkText"
         >
           LinkedIn
         </a>
       </div>
-      <div class="upperNavSingleLink">
+      <div className="upperNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.google.com"
-          class="upperNavSingleLinkText"
+          className="upperNavSingleLinkText"
         >
           CV
         </a>

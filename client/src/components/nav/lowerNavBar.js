@@ -31,12 +31,12 @@ const UpperNavBar = () => {
         delay: 0.5,
       }}
     >
-      <div class="lowerNavSingleLink">
+      <div className="lowerNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/ayrton-campbell/"
-          class="lowerNavSingleLinkText"
+          className="lowerNavSingleLinkText"
         >
           Home
         </a>
@@ -71,33 +71,33 @@ const UpperNavBar = () => {
         </div>
       </div>
 
-      <div class="lowerNavSingleLink">
+      <div className="lowerNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/ayrton-campbell/"
-          class="lowerNavSingleLinkText"
+          className="lowerNavSingleLinkText"
         >
           LinkedIn
         </a>
       </div>
 
-      <div class="lowerNavSingleLink">
+      <div className="lowerNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.google.com"
-          class="lowerNavSingleLinkText"
+          className="lowerNavSingleLinkText"
         >
           CV
         </a>
       </div>
-      <div class="lowerNavSingleLink">
+      <div className="lowerNavSingleLink">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/AyrtonCR"
-          class="lowerNavSingleLinkText"
+          className="lowerNavSingleLinkText"
         >
           GitHub
         </a>
