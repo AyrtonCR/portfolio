@@ -60,11 +60,19 @@ const UpperNavBar = () => {
         </div>
 
         <div className={`dropdownMenu ${open ? "active" : "inactive"}`}>
-          <ul className="dropdownUl">
-            <DropdownItem img={User} text={"Local Surf Project"} />
-            <DropdownItem img={User} text={"Portfolio Project"} />
-            <DropdownItem img={User} text={"Other Project"} />
-            <DropdownItem img={User} text={"Another one"} />
+          <ul className="upperDropdownUl">
+            <DropdownItem
+              text={"Pegasus Bay Surf"}
+              href="https://github.com/AyrtonCR/lsp"
+            />
+
+            <DropdownItem text={"Groovy Tunes"} />
+            <DropdownItem text={"Sinai Sun Tourism"} />
+            <DropdownItem text={"Display Gallery"} />
+            <DropdownItem
+              text={"Portfolio Project"}
+              href="https://github.com/AyrtonCR/portfolio"
+            />
           </ul>
         </div>
       </div>
@@ -105,9 +113,17 @@ const UpperNavBar = () => {
 };
 function DropdownItem(props) {
   return (
-    <li className="dropdownItem">
+    <li className="upperDropdownItem">
       <img src={props.img}></img>
-      <a> {props.text}</a>
+      <a
+        href={props.href}
+        className="upperDropdownText"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        {props.text}
+      </a>
     </li>
   );
 }

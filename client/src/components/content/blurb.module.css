@@ -15,10 +15,9 @@
     display: grid;
     justify-self: center;
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: "Poiret One", cursive;
-    /* text-shadow: -5.12rem 1.12rem 9rem black; */
-    text-shadow: 8rem 8rem 8rem black;
+    text-shadow: 0.1rem 0.1rem 1.2rem black;
     margin: 0rem;
   }
 
@@ -27,15 +26,15 @@
     width: fit-content;
     display: grid;
     justify-self: center;
-    margin: 0rem;
+    margin: 2rem 0;
     margin-bottom: 2rem;
     display: grid;
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Poiret One", cursive;
-    text-shadow: 0 0 0rem black;
+    text-shadow: 0.1rem 0.1rem 1.5rem black;
     color: white;
   }
 }

@@ -3,11 +3,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Slider from "../carousel/carousel";
 import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
-import Dahab1 from "../../utilities/images/ras.webp";
+import Dahab1 from "../../utilities/images/nuewiba-xl.jpeg";
 import MusicIcon from "../../utilities/images/vinyl-icon.png";
 import Vacation from "../../utilities/images/vacation.png";
-import ChchFog from "../../utilities/images/chch-fog-wp.avif";
-import LakeWP from "../../utilities/images/lake-wp.webp";
+import Port from "../../utilities/images/mt.jpeg";
+import LakeWP from "../../utilities/images/lake-22.jpeg";
 
 const responsive = {
   superLargeDesktop: {
@@ -66,7 +66,7 @@ const HomeContent = () => {
               transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className={style.topLayerWallpaper}
-            src={ChchFog}
+            src={LakeWP}
           ></motion.img>
           <motion.img
             style={{
@@ -74,7 +74,7 @@ const HomeContent = () => {
               transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className={style.topLayerWallpaper2}
-            src={LakeWP}
+            src={Port}
           ></motion.img>
 
           <motion.img

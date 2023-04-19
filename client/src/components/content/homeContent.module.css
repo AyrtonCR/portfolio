@@ -214,19 +214,19 @@
   .topLayerWallpaper2,
   .topLayerWallpaper3,
   .topLayerWallpaper4 {
-    width: 110rem;
-    height: 47rem;
+    min-width: 102.5rem;
+    max-width: 100%;
+    height: 47.5rem;
     position: absolute;
-    top: 0;
+    top: 0rem;
     left: 0;
   }
   .topLayerWallpaper2 {
-    top: 43rem;
+    top: 48rem;
     z-index: -3;
   }
   .topLayerWallpaper3 {
     height: 52rem;
-    width: 103rem;
     top: unset;
     bottom: 18rem;
     z-index: -4;
@@ -238,8 +238,8 @@
     z-index: -2;
   }
   .mainGrid {
-    padding: 1rem;
-    margin: 0 1rem;
+    padding: 6rem 1rem;
+    margin: 1rem;
     display: none;
   }
   .projectsGrid {

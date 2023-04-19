@@ -2,25 +2,15 @@
   list-style-type: none;
 }
 
-.portraitImage {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-}
-
 .upperDropdownMenu {
   position: relative;
-  top: 20px;
-  background-color: rgba(136, 136, 136, 0.83);
-  border: 0.02rem solid black;
+  top: -40px;
+  right: 200px;
+  background: linear-gradient(180deg, #767370 0%, #464646ef 50%, #313131c5 96%);
+  border: 0.03rem solid rgb(255, 255, 255);
   border-radius: 0.5rem;
   padding: 6px 8px;
-  width: 9rem;
+  width: 8rem;
   z-index: 9;
 }
 
@@ -46,11 +36,6 @@ h3 {
   line-height: 1.2rem;
 }
 
-h3 span {
-  font-size: 14px;
-  color: var(--secondary-text-color);
-  font-weight: 400;
-}
 .upperDropdownUl {
   padding: 0 0.5rem;
 }
@@ -71,24 +56,27 @@ h3 span {
 
 .upperDropdownItem {
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   align-content: center;
   margin: 0.1rem;
   font-size: 0.8rem;
 }
-
-.upperDropdownItem img {
-  max-width: 1.3rem;
-  opacity: 0.5;
-  transition: all 0.5s ease;
+.upperDropdownText {
+  text-decoration: none;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  color: white;
+  font-size: 0.7rem;
+}
+.upperDropdownText:hover {
+  margin-left: 0.9rem;
 }
 
 .upperDropdownItem a {
   max-width: 100%;
   margin-left: 0.5rem;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .upperDropdownMenu.active {
@@ -101,7 +89,7 @@ h3 span {
 .upperDropdownMenu.inactive {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-20px);
+  transform: translateX(25px);
   transition: all 0.5s ease;
 }
 /* abOVE */
@@ -134,13 +122,14 @@ h3 span {
 .upperOpenMenuTitle {
   font-size: 0.9rem;
   display: grid;
-  grid-template-columns: 1fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr;
   align-items: center;
 }
 .upperOpenMenuTitle,
 .upperNavSingleLinkText,
 .upperNavSingleLinkTextCV {
   font-size: 0.9rem;
+  text-shadow: 0.1rem 0.1rem 1.43rem black;
   padding: 0.1rem 0.2rem;
   display: grid;
   cursor: pointer;

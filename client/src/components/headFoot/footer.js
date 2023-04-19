@@ -22,6 +22,7 @@ const Footer = () => {
       <p className={style.footerTextCopyright}>
         Copyright © 2023 - Ayrton Campbell.
       </p>
+
       <LowerNavBar />
     </div>
   );
