@@ -3,28 +3,46 @@ import { motion } from "framer-motion";
 import LowerNavBar from "../nav/lowerNavBar";
 const Footer = () => {
   return (
-    <div className={style.footerContainer}>
+    <motion.div className={style.footerContainer}>
       <motion.p
         className={style.footerText}
-        initial={{ x: 0, scale: 1 }}
-        whileInView={{ y: [0, -3, 0], scale: [1, 1, 1] }}
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
-          delay: 2,
+          delay: 0.1,
           duration: 0.5,
           ease: "easeInOut",
-          repeat: Infinity,
-          repeatDelay: 5,
         }}
       >
         <em className={style.footerNameTitle}>Ayrton Campbell</em>
       </motion.p>
-      <p className={style.footerTextEmail}>ayrtonfcr@gmail.com</p>
-      <p className={style.footerTextCopyright}>
-        Copyright © 2023 - Ayrton Campbell.
-      </p>
+      <motion.p
+        className={style.footerTextEmail}
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: 0.2,
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+      >
+        ayrtonfcr@gmail.com
+      </motion.p>
+      <motion.p
+        className={style.footerTextCopyright}
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+      >
+        Copyright © 2023 - Ayrton Campbell
+      </motion.p>
 
       <LowerNavBar />
-    </div>
+    </motion.div>
   );
 };
 

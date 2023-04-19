@@ -1,8 +1,8 @@
 import "./upperNavBar.css";
 import { useState, useEffect, useRef } from "react";
-import User from "../../utilities/images/celtic1.webp";
 import { motion } from "framer-motion";
 import { IoIosArrowDropleft } from "react-icons/io";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 const UpperNavBar = () => {
   const [open, setOpen] = useState(false);
@@ -43,7 +43,8 @@ const UpperNavBar = () => {
           }}
         >
           <h3 className="upperOpenMenuTitle">
-            <IoIosArrowDropleft /> &nbsp; Projects
+            <IoIosArrowDropdown className="dropdownDown" />
+            <IoIosArrowDropleft className="dropdownLeft" /> &nbsp; Projects
           </h3>
         </div>
 

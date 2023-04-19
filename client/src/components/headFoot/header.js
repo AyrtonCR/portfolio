@@ -1,10 +1,6 @@
 import HeaderImage from "../../utilities/images/celtic-transparent-14.png";
 import style from "./header.module.css";
-import { motion, useInView } from "framer-motion";
-import { Link } from "react-router-dom";
-import BlackPoly from "../../utilities/images/black-low-poly-geometric.png";
-import Blue from "../../utilities/images/blue-turquoise.png";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (

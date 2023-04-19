@@ -112,7 +112,17 @@ const HomeContent = () => {
                 damping: 9,
               }}
             />
-            <p className={style.projectGridTitle}>Pegasus Bay Surf</p>
+            <motion.a
+              href="https://github.com/AyrtonCR/lsp"
+              className={style.projectGridTitle}
+              initial={{ scale: 1 }}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 9 }}
+            >
+              Pegasus Bay Surf
+            </motion.a>
             <p className={style.gridText}>
               I have a great passion for surfing and being a part of life near
               the ocean. This project is aimed at new surfers looking to go out
@@ -121,16 +131,15 @@ const HomeContent = () => {
               different beaches, surfboards, conditions and has the template for
               a forum that surfers can use to keep each other posted on the
               surf. <br /> <br />
-              Click
+              Click{" "}
               <a
                 className={style.anchorTag}
                 target="_blank"
                 rel="noreferrer"
                 href="https://lsp-client.onrender.com/"
               >
-                {" "}
-                here{" "}
-              </a>
+                here
+              </a>{" "}
               to view the site.
             </p>
           </motion.div>
@@ -157,7 +166,17 @@ const HomeContent = () => {
                 damping: 9,
               }}
             />
-            <p className={style.projectGridTitle}>Groovy Tunes Music Player</p>
+            <motion.a
+              href="https://www.google.com"
+              className={style.projectGridTitle}
+              initial={{ scale: 1 }}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 9 }}
+            >
+              Groovy Tunes
+            </motion.a>
             <p className={style.gridText}>
               This is a project I am looking to start soon will be a music
               player with some additional functionality added. I am still
@@ -167,16 +186,15 @@ const HomeContent = () => {
               It is possible I will be able to add some of my own music in an
               SQL database that can be played using the music player.
               <br />
-              <br /> Click
+              <br /> Click{" "}
               <a
                 className={style.anchorTag}
                 target="_blank"
                 rel="noreferrer"
                 href="https://lsp-client.onrender.com/"
               >
-                {" "}
-                here{" "}
-              </a>
+                here
+              </a>{" "}
               to view the site.
             </p>
           </motion.div>
@@ -202,7 +220,17 @@ const HomeContent = () => {
                 damping: 9,
               }}
             />
-            <p className={style.projectGridTitle}>Display Gallery</p>
+            <motion.a
+              href="https://www.google.com"
+              className={style.projectGridTitle}
+              initial={{ scale: 1 }}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 9 }}
+            >
+              Display Gallery
+            </motion.a>
             <p className={style.gridText}>
               In my younger years I backpacked quite a lot and had a chance to
               experience some really incredible countries. It has been a goal of
@@ -210,16 +238,15 @@ const HomeContent = () => {
               uniquely display to people. <br /> <br /> This project will be an
               image viewer / library with some additional features that make it
               appealing for a user to navigate. <br /> <br />
-              Click
+              Click{" "}
               <a
                 className={style.anchorTag}
                 target="_blank"
                 rel="noreferrer"
                 href="https://lsp-client.onrender.com/"
               >
-                {" "}
-                here{" "}
-              </a>
+                here
+              </a>{" "}
               to view the site.
             </p>
           </motion.div>
@@ -232,16 +259,27 @@ const HomeContent = () => {
               transition: "all 2.3s 0.3s",
             }}
           >
-            <motion.h4
-              className={style.mainGrid4Heading}
+            <motion.div
               style={{
                 transform: isInView3 ? "none" : "translateX(-750px)",
                 opacity: isInView3 ? 1 : 0,
                 transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
               }}
             >
-              Sinai Sun Tourism
-            </motion.h4>
+              <div className={style.mainGrid4HeadingHolder}>
+                <motion.a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.google.com"
+                  className={style.mainGrid4Heading}
+                  initial={{ scale: 1 }}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 9 }}
+                >
+                  Sinai Sun Tourism
+                </motion.a>
+              </div>
+            </motion.div>
             <motion.p
               className={style.gridTextEgypt}
               style={{
@@ -257,17 +295,16 @@ const HomeContent = () => {
               of the Sinai Peninsula where life is cruisy and slow. <br />{" "}
               <br /> Formerly a fishing village, it is now well known for having
               one of the best diving locations in the world, the incredible
-              'Blue Hole'. <br /> <br /> Click{" "}
+              'Blue Hole'. <br /> <br /> Click &nbsp;
               <a
                 className={style.anchorTag}
                 target="_blank"
                 rel="noreferrer"
                 href="https://lsp-client.onrender.com/"
               >
-                {" "}
-                here{" "}
-              </a>{" "}
-              to view the project.
+                here
+              </a>
+              &nbsp; to view the project.
             </motion.p>
           </motion.div>
           {/* </motion.div> */}

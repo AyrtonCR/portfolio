@@ -188,6 +188,11 @@
   .lowerNavSingleLinkText {
     font-size: 1rem;
   }
+  .openMenuTitle:hover,
+  .lowerNavSingleLinkText:hover {
+    font-size: unset;
+    scale: 1.1;
+  }
   .lowerNavContainer {
     gap: 3rem;
   }

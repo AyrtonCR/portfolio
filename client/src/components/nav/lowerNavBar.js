@@ -1,7 +1,5 @@
 import style from "./lowerNavBar.css";
-
 import { useState, useEffect, useRef } from "react";
-import User from "../../utilities/images/celtic1.webp";
 import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoIosArrowDropup } from "react-icons/io";
@@ -25,16 +23,12 @@ const UpperNavBar = () => {
     <motion.div
       className="lowerNavContainer"
       ref={menuRef}
-      initial={{ opacity: 0, y: 0 }}
-      animate={{ opacity: [0, 0.2, 1], scale: [1, 1, 1], y: [0, 5, 0] }}
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: [0, 0.2, 1], y: 0 }}
       transition={{
-        opacity: { duration: 1.7, delay: 0.7 },
-        scale: { duration: 1.2, delay: 0.7 },
-        duration: 0.5,
-        delay: 3.5,
-        times: [0, 0.7, 1.2],
-        repeatDelay: 11.5,
-        repeat: Infinity,
+        ease: "easeInOut",
+        duration: 0.8,
+        delay: 0.5,
       }}
     >
       <div class="lowerNavSingleLink">

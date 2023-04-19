@@ -1,11 +1,13 @@
 * {
   list-style-type: none;
 }
+.dropdownLeft {
+  display: none;
+}
 
 .upperDropdownMenu {
   position: relative;
-  top: -40px;
-  right: 200px;
+  top: 40px;
   background: linear-gradient(180deg, #767370 0%, #464646ef 50%, #313131c5 96%);
   border: 0.03rem solid rgb(255, 255, 255);
   border-radius: 0.5rem;
@@ -89,7 +91,7 @@ h3 {
 .upperDropdownMenu.inactive {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(25px);
+  transform: translateY(-25px);
   transition: all 0.5s ease;
 }
 /* abOVE */
@@ -322,6 +324,35 @@ h3 {
   }
 }
 @media only screen and (min-width: 55rem) {
+  .dropdownDown {
+    display: none;
+  }
+  .dropdownLeft {
+    display: block;
+  }
+  .upperDropdownMenu {
+    position: relative;
+    top: -40px;
+    right: 200px;
+    background: linear-gradient(
+      180deg,
+      #767370 0%,
+      #464646ef 50%,
+      #313131c5 96%
+    );
+    border: 0.03rem solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 6px 8px;
+    width: 8rem;
+    z-index: 9;
+  }
+  .upperDropdownMenu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: unset;
+    transform: translateX(25px);
+    transition: all 0.5s ease;
+  }
   .NavBar .MobileNavigation {
     display: none;
   }
@@ -386,16 +417,6 @@ h3 {
     padding: 0 1rem;
   }
 }
-@media only screen and (min-width: 60rem) {
-  .navLink {
-    transition: all 0.3s ease;
-  }
-
-  .navLink:hover {
-    transform: scale(1.2);
-  }
-}
-
 @media only screen and (min-width: 80rem) {
   .navLink {
     font-size: 1rem;
