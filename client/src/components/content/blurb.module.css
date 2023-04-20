@@ -38,9 +38,26 @@
     color: white;
   }
 }
+.arrowSectionHolder {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
 
+.sectionArrow {
+  cursor: pointer;
+  display: grid;
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.01rem solid white;
+  transition: all 0.5s ease;
+}
+.sectionArrow:hover {
+  scale: 1.15;
+}
 @media only screen and (min-width: 65.5rem) {
   .blurbContainer {
-    margin-bottom: 28rem;
+    margin-bottom: 20rem;
   }
 }

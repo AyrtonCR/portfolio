@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoIosArrowDropup } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const UpperNavBar = () => {
   const [open, setOpen] = useState(false);
@@ -32,14 +33,16 @@ const UpperNavBar = () => {
       }}
     >
       <div className="lowerNavSingleLink">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/ayrton-campbell/"
+        <Link
           className="lowerNavSingleLinkText"
+          to="scrollHeader"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={2000}
         >
           Home
-        </a>
+        </Link>
       </div>
       <div className="lowerNavLinksContainer">
         <div

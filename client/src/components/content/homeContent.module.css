@@ -262,7 +262,7 @@
   .introGridContainer {
     display: grid;
     height: fit-content;
-    margin-bottom: 10rem;
+    margin-bottom: 5.6rem;
     border-radius: 1rem;
     padding: 0.3rem;
   }
@@ -288,6 +288,7 @@
     font-family: "Poiret One", cursive;
     text-shadow: 0.1rem 0.1rem 0.31rem black;
     padding: 0rem;
+    margin: 1.3rem;
     color: white;
   }
   .introText1,
@@ -326,6 +327,42 @@
     scale: 1.6;
     color: rgb(224, 57, 57);
   }
+
+  .arrowSectionHolder2 {
+    display: grid;
+    justify-content: center;
+    padding: 2.4rem 0;
+  }
+  .arrowSectionHolder3 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10rem;
+    padding-bottom: 2rem;
+  }
+  .arrowSectionHolder4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 4.5rem;
+  }
+  .sectionArrow {
+    cursor: pointer;
+    display: grid;
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.01rem solid white;
+    transition: all 0.5s ease;
+  }
+  .sectionArrow:hover {
+    scale: 1.15;
+  }
   .belowSpan {
     color: white;
     transition: all 0.3s ease;
@@ -341,11 +378,11 @@
   }
   .projectsGrid {
     gap: 2rem;
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
     min-height: 40rem;
   }
   .AboutMeGrid {
-    height: 45rem;
+    height: 37rem;
     opacity: 1;
   }
   .FinalTwoGrid {

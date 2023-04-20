@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import LowerNavBar from "../nav/lowerNavBar";
 const Footer = () => {
   return (
-    <motion.div className={style.footerContainer}>
+    <motion.div className={style.footerContainer} id="scrollFooter">
       <motion.p
         className={style.footerText}
         initial={{ opacity: 0, x: -100 }}

@@ -10,6 +10,9 @@ import Port from "../../utilities/images/mt.jpeg";
 import LakeWP from "../../utilities/images/lake-22.jpeg";
 import NbBeach from "../../utilities/images/field.jpeg";
 import { TfiArrowCircleDown } from "react-icons/tfi";
+import { HiArrowDown } from "react-icons/hi";
+import { HiArrowUp } from "react-icons/hi";
+
 import { Link } from "react-scroll";
 
 const responsive = {
@@ -60,6 +63,7 @@ const HomeContent = () => {
         <div className={style.refHanger2} ref={ref2}></div>
         <div className={style.refHanger3} ref={ref3}></div>
         <div className={style.refHanger4} ref={ref4}></div>
+
         <div className={style.mainGridWpHolder}>
           <motion.img
             style={{
@@ -94,7 +98,7 @@ const HomeContent = () => {
             src={Dahab1}
           ></motion.img>
         </div>
-        <div className={style.introGridContainer}>
+        <div className={style.introGridContainer} id="scrollIntro">
           <div className={style.introHeadingContainer}>
             <h4 className={style.introHeading}>Who am I?</h4>
             <div className={style.introGrid}>
@@ -148,7 +152,26 @@ const HomeContent = () => {
               </p>
             </div>
           </div>
+          <motion.div
+            className={style.arrowSectionHolder2}
+            style={{
+              scale: isInView2 ? 1.1 : 0.8,
+              opacity: isInView2 ? 0.9 : 0,
+              transition: "all 1.3s",
+            }}
+          >
+            <Link
+              to="scrollProjects"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={1000}
+            >
+              <HiArrowDown className={style.sectionArrow} />
+            </Link>
+          </motion.div>
         </div>
+
         <div className={style.projectsGrid} id="scrollProjects">
           <motion.div
             className={style.mainGrid1}
@@ -311,6 +334,24 @@ const HomeContent = () => {
             </p>
           </motion.div>
         </div>
+        <motion.div
+          className={style.arrowSectionHolder3}
+          style={{
+            scale: isInView3 ? 1.1 : 0.8,
+            opacity: isInView3 ? 0.9 : 0,
+            transition: "all 1.3s",
+          }}
+        >
+          <Link
+            to="scrollSinai"
+            spy={true}
+            smooth={true}
+            offset={-160}
+            duration={1000}
+          >
+            <HiArrowDown className={style.sectionArrow} />
+          </Link>
+        </motion.div>
         <div className={style.AboutMeGrid}>
           <motion.div
             className={style.mainGrid4}
@@ -331,6 +372,7 @@ const HomeContent = () => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.google.com"
+                  id="scrollSinai"
                   className={style.mainGrid4Heading}
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.05 }}
@@ -369,6 +411,24 @@ const HomeContent = () => {
           </motion.div>
           {/* </motion.div> */}
         </div>
+        <motion.div
+          className={style.arrowSectionHolder4}
+          style={{
+            scale: isInView4 ? 1.1 : 0.8,
+            opacity: isInView4 ? 0.9 : 0,
+            transition: "all 1.3s",
+          }}
+        >
+          <Link
+            to="scrollFooter"
+            spy={true}
+            smooth={true}
+            offset={-600}
+            duration={1000}
+          >
+            <HiArrowDown className={style.sectionArrow} />
+          </Link>
+        </motion.div>
       </div>
     </>
   );

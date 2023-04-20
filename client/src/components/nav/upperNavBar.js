@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const UpperNavBar = () => {
   const [open, setOpen] = useState(false);
@@ -85,6 +86,18 @@ const UpperNavBar = () => {
         >
           CV
         </a>
+      </div>
+      <div className="upperNavSingleLink">
+        <Link
+          to="scrollIntro"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={1000}
+          className="upperNavSingleLinkText"
+        >
+          About
+        </Link>
       </div>
     </motion.div>
   );

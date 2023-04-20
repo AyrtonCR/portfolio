@@ -114,7 +114,7 @@ h3 {
 .upperNavContainer {
   display: grid;
   justify-self: center;
-  grid-template-columns: 1fr 1fr 0.3fr;
+  grid-template-columns: 1fr 1fr 0.3fr 1fr;
   max-width: 50rem;
   padding-bottom: 0.01rem;
   padding: 0 1.7rem;
