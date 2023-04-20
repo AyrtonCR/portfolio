@@ -1,5 +1,5 @@
 import style from "./homeContent.module.css";
-import { motion, useInView } from "framer-motion";
+import { motion, scroll, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Slider from "../carousel/carousel";
 import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
@@ -8,6 +8,9 @@ import MusicIcon from "../../utilities/images/vinyl-icon.png";
 import Vacation from "../../utilities/images/vacation.png";
 import Port from "../../utilities/images/mt.jpeg";
 import LakeWP from "../../utilities/images/lake-22.jpeg";
+import NbBeach from "../../utilities/images/field.jpeg";
+import { TfiArrowCircleDown } from "react-icons/tfi";
+import { Link } from "react-scroll";
 
 const responsive = {
   superLargeDesktop: {
@@ -64,7 +67,7 @@ const HomeContent = () => {
               transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className={style.topLayerWallpaper}
-            src={LakeWP}
+            src={NbBeach}
           ></motion.img>
           <motion.img
             style={{
@@ -72,29 +75,88 @@ const HomeContent = () => {
               transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className={style.topLayerWallpaper2}
-            src={Port}
+            src={LakeWP}
           ></motion.img>
-
           <motion.img
             style={{
               transform: isInView3 && !isInView2 ? "scale(1.05)" : "none",
               transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className={style.topLayerWallpaper3}
+            src={Port}
+          ></motion.img>
+          <motion.img
+            style={{
+              transform: isInView4 && !isInView3 ? "scale(1.05)" : "none",
+              transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1)",
+            }}
+            className={style.topLayerWallpaper4}
             src={Dahab1}
           ></motion.img>
         </div>
-        <div className={style.projectsGrid}>
+        <div className={style.introGridContainer}>
+          <div className={style.introHeadingContainer}>
+            <h4 className={style.introHeading}>Who am I?</h4>
+            <div className={style.introGrid}>
+              <p className={style.introText1}>
+                I am a Full-stack web developer from Christchurch, NZ. <br />
+                <br /> My aim — to consistently create, deliver and maintain
+                high-quality web applications using modern industry standard
+                technologies. I really enjoy being a part of building solutions
+                that last. <br />
+                <br />I am highly motivated and skilled in working with
+                Front-end, Back-end, Databases and UX Design. Currently I enjoy
+                building with Javascript and React due to it's versatility.
+                <br />
+                <br />
+                Look{" "}
+                <Link
+                  className={style.belowSpan}
+                  to="scrollProjects"
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={1000}
+                >
+                  below
+                </Link>{" "}
+                to see a few of my current projects. &nbsp; &nbsp;
+                {
+                  <Link
+                    to="scrollProjects"
+                    spy={true}
+                    smooth={true}
+                    offset={-90}
+                    duration={1000}
+                  >
+                    <TfiArrowCircleDown className={style.downArrow} />
+                  </Link>
+                }
+              </p>
+              <p className={style.introText2}>
+                Previously, I worked as an electrician in the commercial
+                construction industry.
+                <br /> <br /> In search of a job that was easier on my body I
+                branched out into IT completing a Diploma in Web Development and
+                learning to build applications and websites.
+                <br />
+                <br />
+                While I do enjoy web development there are many other things in
+                life that keep me busy. <br /> <br />I am a very keen surfer and
+                also really enjoy playing guitar, creating music, and spending
+                time with my friends and family.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={style.projectsGrid} id="scrollProjects">
           <motion.div
             className={style.mainGrid1}
             style={{
-              transform: isInView2 ? "none" : "translateX(-700px)",
-              opacity: isInView2 ? 1 : 0,
+              transform: isInView3 ? "none" : "translateX(-700px)",
+              opacity: isInView3 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
-            // initial={{ x: -600, opacity: 0 }}
-            // animate={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 1, delay: 0.2 }}
           >
             <motion.img
               className={style.gridImage}
@@ -144,7 +206,7 @@ const HomeContent = () => {
           <motion.div
             className={style.mainGrid2}
             style={{
-              opacity: isInView2 ? 1 : 0,
+              opacity: isInView3 ? 1 : 0,
               transition: "all 1.4s cubic-bezier(0.17, 0.1, 0.55, 1) 0.5s",
             }}
           >
@@ -199,8 +261,8 @@ const HomeContent = () => {
           <motion.div
             className={style.mainGrid3}
             style={{
-              transform: isInView2 ? "none" : "translateX(700px)",
-              opacity: isInView2 ? 1 : 0,
+              transform: isInView3 ? "none" : "translateX(700px)",
+              opacity: isInView3 ? 1 : 0,
               transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
             }}
           >
@@ -253,14 +315,14 @@ const HomeContent = () => {
           <motion.div
             className={style.mainGrid4}
             style={{
-              opacity: isInView3 ? 1 : 0,
+              opacity: isInView4 ? 1 : 0,
               transition: "all 2.3s 0.3s",
             }}
           >
             <motion.div
               style={{
-                transform: isInView3 ? "none" : "translateX(-750px)",
-                opacity: isInView3 ? 1 : 0,
+                transform: isInView4 ? "none" : "translateX(-750px)",
+                opacity: isInView4 ? 1 : 0,
                 transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
               }}
             >
@@ -281,8 +343,8 @@ const HomeContent = () => {
             <motion.p
               className={style.gridTextEgypt}
               style={{
-                transform: isInView3 ? "none" : "translateX(-1150px)",
-                opacity: isInView3 ? 1 : 0,
+                transform: isInView4 ? "none" : "translateX(-1150px)",
+                opacity: isInView4 ? 1 : 0,
                 transition: "all 1.9s cubic-bezier(0.17, 0.2, 0.3, 1) 0.3s",
               }}
             >
