@@ -2,6 +2,7 @@ import style from "./homeContent.module.css";
 import { motion, scroll, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Slider from "../carousel/carousel";
+import SliderTwo from "../carousel/carousel2";
 import SurfboardsImage from "../../utilities/images/surfboard-icon.png";
 import Dahab1 from "../../utilities/images/nuewiba-xl.jpeg";
 import MusicIcon from "../../utilities/images/vinyl-icon.png";
@@ -12,7 +13,6 @@ import NbBeach from "../../utilities/images/field.jpeg";
 import { TfiArrowCircleDown } from "react-icons/tfi";
 import { HiArrowDown } from "react-icons/hi";
 import { HiArrowUp } from "react-icons/hi";
-
 import { Link } from "react-scroll";
 
 const responsive = {
@@ -57,13 +57,13 @@ const HomeContent = () => {
 
   return (
     <>
+      <SliderTwo />
       <Slider />
       <div className={style.mainGrid}>
         <div className={style.refHanger1} ref={ref}></div>
         <div className={style.refHanger2} ref={ref2}></div>
         <div className={style.refHanger3} ref={ref3}></div>
         <div className={style.refHanger4} ref={ref4}></div>
-
         <div className={style.mainGridWpHolder}>
           <motion.img
             style={{
@@ -98,6 +98,24 @@ const HomeContent = () => {
             src={Dahab1}
           ></motion.img>
         </div>
+        <motion.div
+          className={style.arrowSectionHolder5}
+          style={{
+            scale: isInView2 ? 1.1 : 0.8,
+            opacity: isInView2 ? 0.9 : 0,
+            transition: "all 1.3s",
+          }}
+        >
+          <Link
+            to="scrollHeader"
+            spy={true}
+            smooth={true}
+            offset={-280}
+            duration={1000}
+          >
+            <HiArrowUp className={style.sectionArrow} />
+          </Link>
+        </motion.div>
         <div className={style.introGridContainer} id="scrollIntro">
           <div className={style.introHeadingContainer}>
             <h4 className={style.introHeading}>Who am I?</h4>
@@ -114,28 +132,11 @@ const HomeContent = () => {
                 <br />
                 <br />
                 Look{" "}
-                <Link
-                  className={style.belowSpan}
-                  to="scrollProjects"
-                  spy={true}
-                  smooth={true}
-                  offset={-90}
-                  duration={1000}
-                >
+                <Link className={style.belowSpan} c>
                   below
                 </Link>{" "}
                 to see a few of my current projects. &nbsp; &nbsp;
-                {
-                  <Link
-                    to="scrollProjects"
-                    spy={true}
-                    smooth={true}
-                    offset={-90}
-                    duration={1000}
-                  >
-                    <TfiArrowCircleDown className={style.downArrow} />
-                  </Link>
-                }
+                {/* {removed link from here} */}
               </p>
               <p className={style.introText2}>
                 Previously, I worked as an electrician in the commercial
@@ -164,14 +165,31 @@ const HomeContent = () => {
               to="scrollProjects"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-115}
               duration={1000}
             >
               <HiArrowDown className={style.sectionArrow} />
             </Link>
           </motion.div>
         </div>
-
+        <motion.div
+          className={style.arrowSectionHolder6}
+          style={{
+            scale: isInView3 ? 1.1 : 0.8,
+            opacity: isInView3 ? 0.9 : 0,
+            transition: "all 1.3s",
+          }}
+        >
+          <Link
+            to="scrollIntro"
+            spy={true}
+            smooth={true}
+            offset={-140}
+            duration={1000}
+          >
+            <HiArrowUp className={style.sectionArrow} />
+          </Link>
+        </motion.div>
         <div className={style.projectsGrid} id="scrollProjects">
           <motion.div
             className={style.mainGrid1}
@@ -346,13 +364,31 @@ const HomeContent = () => {
             to="scrollSinai"
             spy={true}
             smooth={true}
-            offset={-160}
+            offset={-199}
             duration={1000}
           >
             <HiArrowDown className={style.sectionArrow} />
           </Link>
         </motion.div>
         <div className={style.AboutMeGrid}>
+          <motion.div
+            className={style.arrowSectionHolder7}
+            style={{
+              scale: isInView4 ? 1.1 : 0.8,
+              opacity: isInView4 ? 0.9 : 0,
+              transition: "all 1.3s",
+            }}
+          >
+            <Link
+              to="scrollProjects"
+              spy={true}
+              smooth={true}
+              offset={-115}
+              duration={1000}
+            >
+              <HiArrowUp className={style.sectionArrow} />
+            </Link>
+          </motion.div>
           <motion.div
             className={style.mainGrid4}
             style={{

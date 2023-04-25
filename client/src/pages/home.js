@@ -4,7 +4,6 @@ import UpperNavBar from "../components/nav/upperNavBar";
 import Footer from "../components/headFoot/footer";
 import Blurb from "../components/content/blurb";
 import HomeContent from "../components/content/homeContent";
-
 import BlackPoly from ".././utilities/images/black-bg.jpeg";
 
 // import React, { useState, useEffect } from "react";

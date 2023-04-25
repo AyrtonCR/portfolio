@@ -92,7 +92,7 @@ const UpperNavBar = () => {
           to="scrollIntro"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={-145}
           duration={1000}
           className="upperNavSingleLinkText"
         >

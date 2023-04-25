@@ -79,7 +79,7 @@ const Blurb = () => {
           to="scrollIntro"
           spy={true}
           smooth={true}
-          offset={-150}
+          offset={-140}
           duration={1000}
         >
           {" "}

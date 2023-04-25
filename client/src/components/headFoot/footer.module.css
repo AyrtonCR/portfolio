@@ -27,6 +27,16 @@
   }
   .footerName {
   }
+  .arrowSectionHolder8 {
+    display: none;
+  }
+
+  .footerHanger {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 21.5rem) {
   .footerContainer {
@@ -72,5 +82,28 @@
     font-size: 2.5rem;
   }
   .footerName {
+  }
+}
+
+@media only screen and (min-width: 65.5rem) {
+  .arrowSectionHolder8 {
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+  .sectionArrow {
+    cursor: pointer;
+    display: grid;
+    color: rgb(246, 246, 246);
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.01rem solid white;
+    transition: all 0.5s ease;
   }
 }
