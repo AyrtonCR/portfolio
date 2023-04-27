@@ -26,21 +26,46 @@ const responsive = {
 
 const SliderTwo = () => {
   return (
-    <Carousel responsive={responsive}>
+    <Carousel className={style.carousel2Container} responsive={responsive}>
       <div className={style.mainGrid1}>
         <img
           className={style.gridImage}
           src={SurfboardsImage}
           alt="surfboards"
         />
-        <p className={style.projectGridTitle}>Title</p>
-        <p className={style.gridText}>text</p>
+        <p className={style.projectGridTitle}>Who Am I?</p>
+        <p className={style.introText1}>
+          I am a Full-stack web developer from Christchurch, NZ. <br />
+          <br /> My aim — to consistently create, deliver and maintain
+          high-quality web applications using modern industry standard
+          technologies. I really enjoy being a part of building solutions that
+          last. <br />
+          <br />I am highly motivated and skilled in working with Front-end,
+          Back-end, Databases and UX Design. Currently I enjoy building with
+          Javascript and React due to it's versatility.
+          <br />
+          <br />
+          Look below to see a few of my current projects. &nbsp; &nbsp;
+          {/* {removed link from here} */}
+        </p>
       </div>
       <div className={style.mainGrid2}>
         {" "}
         <img className={style.gridImage} src={MusicIcon} alt="egypt" />
-        <p className={style.projectGridTitle}>Title</p>
-        <p className={style.gridText}>Text</p>
+        <p className={style.projectGridTitle}>About</p>
+        <p className={style.introText2}>
+          Previously, I worked as an electrician in the commercial construction
+          industry.
+          <br /> <br /> In search of a job that was easier on my body I branched
+          out into IT completing a Diploma in Web Development and learning to
+          build applications and websites.
+          <br />
+          <br />
+          While I do enjoy web development there are many other things in life
+          that keep me busy. <br /> <br />I am a very keen surfer and also
+          really enjoy playing guitar, creating music, and spending time with my
+          friends and family.
+        </p>
       </div>
     </Carousel>
   );

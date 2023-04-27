@@ -116,9 +116,8 @@
     display: grid;
     margin: 0 1rem;
     justify-items: center;
-    border: 0.01rem solid white;
+
     border-radius: 1rem;
-    box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
   }
   /* About Me */
   .mainGrid4 {
@@ -160,7 +159,7 @@
   .projectGridTitle {
     display: inline;
     align-self: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5rem 1rem;
     color: white;
   }
@@ -311,9 +310,7 @@
   .mainGrid1,
   .mainGrid2,
   .mainGrid3 {
-    border: 0.01rem solid white;
     border-radius: 1rem;
-    box-shadow: 0 0.15rem 1rem -0.1rem rgb(240, 240, 240);
     margin-bottom: 4rem;
   }
   /* About Me */
@@ -341,7 +338,7 @@
   .gridText,
   .gridTextEgypt,
   .projectGridTitle {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5rem 1rem;
     color: white;
   }
@@ -369,6 +366,27 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+  }
+}
+@media only screen and (min-width: 25.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    margin: 1.5rem;
+  }
+}
+@media only screen and (min-width: 35.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    margin: 2.5rem;
+  }
+}
+@media only screen and (min-width: 45.5rem) {
+  .mainGrid1,
+  .mainGrid2,
+  .mainGrid3 {
+    margin: 4.5rem;
   }
 }
 @media only screen and (min-width: 50rem) {
