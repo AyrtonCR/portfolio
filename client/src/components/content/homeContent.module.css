@@ -77,17 +77,6 @@
     left: 0;
     z-index: -2;
   }
-  .topLayerWallpaper2 {
-    top: 43rem;
-    z-index: -3;
-  }
-  .topLayerWallpaper3 {
-    height: 32rem;
-    width: 38rem;
-    top: unset;
-    bottom: 18rem;
-    z-index: -4;
-  }
 
   .mainGridWpHolder {
     display: grid;
@@ -226,28 +215,30 @@
   .topLayerWallpaper2,
   .topLayerWallpaper3,
   .topLayerWallpaper4 {
-    min-width: 102.5rem;
+    min-width: 100vw;
     max-width: 100%;
-    height: 47rem;
+    min-height: 51.5rem;
+    max-height: 48.25vw;
     position: absolute;
     top: 0rem;
     left: 0;
   }
   .topLayerWallpaper2 {
-    top: 48rem;
-    height: 48rem;
+    top: unset;
+    min-height: 54rem;
+    top: 51rem;
     z-index: -3;
   }
   .topLayerWallpaper3 {
-    height: 53rem;
+    min-height: 54rem;
     top: unset;
-    bottom: 75.5rem;
+    bottom: 74rem;
     z-index: -4;
   }
   .topLayerWallpaper4 {
     height: 52rem;
     top: unset;
-    bottom: 22rem;
+    bottom: 21rem;
     z-index: -4;
   }
   .mainGridWpHolder {
@@ -321,6 +312,7 @@
     display: grid;
     justify-content: center;
     padding: 2.4rem 0;
+    margin-top: 1.6rem;
   }
   .arrowSectionHolder3 {
     display: grid;
@@ -344,7 +336,9 @@
   .arrowSectionHolder5 {
     display: grid;
     justify-content: center;
-    padding-bottom: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2.8rem;
+    padding-top: 2.2rem;
   }
   .arrowSectionHolder6 {
     display: grid;

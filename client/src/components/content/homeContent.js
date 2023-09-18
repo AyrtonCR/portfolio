@@ -106,13 +106,7 @@ const HomeContent = () => {
             transition: "all 1.3s",
           }}
         >
-          <Link
-            to="scrollHeader"
-            spy={true}
-            smooth={true}
-            offset={-280}
-            duration={1000}
-          >
+          <Link to="scrollHeader" spy={true} smooth={true} offset={-217} duration={1000}>
             <HiArrowUp className={style.sectionArrow} />
           </Link>
         </motion.div>
@@ -122,35 +116,30 @@ const HomeContent = () => {
             <div className={style.introGrid}>
               <p className={style.introText1}>
                 I am a Full-stack web developer from Christchurch, NZ. <br />
-                <br /> My aim — to consistently create, deliver and maintain
-                high-quality web applications using modern industry standard
-                technologies. I really enjoy being a part of building solutions
-                that last. <br />
-                <br />I am highly motivated and skilled in working with
-                Front-end, Back-end, Databases and UX Design. Currently I enjoy
-                building with Javascript and React due to it's versatility.
+                <br /> My aim — to consistently create, deliver and maintain high-quality web applications using modern industry standard technologies. I really
+                enjoy being a part of building solutions that last. <br />
+                <br />I am highly motivated and skilled in working with Front-end, Back-end, Databases and UX Design. Currently I enjoy building with Javascript
+                and React due to it's versatility.
                 <br />
                 <br />
                 Look{" "}
-                <Link className={style.belowSpan} c>
+                <Link to="scrollProjects" spy={true} smooth={true} offset={-130} duration={1000} className={style.belowSpan}>
                   below
                 </Link>{" "}
                 to see a few of my current projects. &nbsp; &nbsp;
                 {/* {removed link from here} */}
               </p>
-              <p className={style.introText2}>
-                Previously, I worked as an electrician in the commercial
-                construction industry.
-                <br /> <br /> In search of a job that was easier on my body I
-                branched out into IT completing a Diploma in Web Development and
-                learning to build applications and websites.
+              <div className={style.introText2}>
+                <p>Previously, I worked as an electrician in the commercial construction industry.</p>
+                <p>
+                  In search of a job that was easier on my body I branched out into IT completing a Diploma in Web Development and learning to build
+                  applications and websites.
+                </p>
                 <br />
                 <br />
-                While I do enjoy web development there are many other things in
-                life that keep me busy. <br /> <br />I am a very keen surfer and
-                also really enjoy playing guitar, creating music, and spending
-                time with my friends and family.
-              </p>
+                While I do enjoy web development there are many other things in life that keep me busy. I am a very keen surfer and also really enjoy playing
+                guitar, creating music, and spending time with my friends and family.
+              </div>
             </div>
           </div>
           <motion.div
@@ -161,13 +150,7 @@ const HomeContent = () => {
               transition: "all 1.3s",
             }}
           >
-            <Link
-              to="scrollProjects"
-              spy={true}
-              smooth={true}
-              offset={-115}
-              duration={1000}
-            >
+            <Link to="scrollProjects" spy={true} smooth={true} offset={-130} duration={1000}>
               <HiArrowDown className={style.sectionArrow} />
             </Link>
           </motion.div>
@@ -180,13 +163,7 @@ const HomeContent = () => {
             transition: "all 1.3s",
           }}
         >
-          <Link
-            to="scrollIntro"
-            spy={true}
-            smooth={true}
-            offset={-140}
-            duration={1000}
-          >
+          <Link to="scrollIntro" spy={true} smooth={true} offset={-161} duration={1000}>
             <HiArrowUp className={style.sectionArrow} />
           </Link>
         </motion.div>
@@ -225,20 +202,11 @@ const HomeContent = () => {
               Pegasus Bay Surf
             </motion.a>
             <p className={style.gridText}>
-              I have a great passion for surfing and being a part of life near
-              the ocean. This project is aimed at new surfers looking to go out
-              in the breaks around Christchurch. <br /> <br /> The project is
-              called 'Pegasus Bay Surf' and offers information about our
-              different beaches, surfboards, conditions and has the template for
-              a forum that surfers can use to keep each other posted on the
-              surf. <br /> <br />
+              I have a great passion for surfing and being a part of life near the ocean. This project is aimed at new surfers looking to go out in the breaks
+              around Christchurch. <br /> <br /> The project is called 'Pegasus Bay Surf' and offers information about our different beaches, surfboards,
+              conditions and has the template for a forum that surfers can use to keep each other posted on the surf. <br /> <br />
               Click{" "}
-              <a
-                className={style.anchorTag}
-                target="_blank"
-                rel="noreferrer"
-                href="https://lsp-client.onrender.com/"
-              >
+              <a className={style.anchorTag} target="_blank" rel="noreferrer" href="https://github.com/AyrtonCR/portfolio">
                 here
               </a>{" "}
               to view the site.
@@ -268,7 +236,7 @@ const HomeContent = () => {
               }}
             />
             <motion.a
-              href="https://www.google.com"
+              href="https://github.com/AyrtonCR/groovy-tunes-mp"
               className={style.projectGridTitle}
               initial={{ scale: 1 }}
               target="_blank"
@@ -279,21 +247,12 @@ const HomeContent = () => {
               Groovy Tunes
             </motion.a>
             <p className={style.gridText}>
-              This is a project I am looking to start soon will be a music
-              player with some additional functionality added. I am still
-              thinking about what features I will add, but it should be built
-              with the same technologies (Javascript, Node, CSS, HTML). <br />{" "}
-              <br />
-              It is possible I will be able to add some of my own music in an
-              SQL database that can be played using the music player.
+              This is a project I am looking to start soon will be a music player with some additional functionality added. I am still thinking about what
+              features I will add, but it should be built with the same technologies (Javascript, Node, CSS, HTML). <br /> <br />
+              It is possible I will be able to add some of my own music in an SQL database that can be played using the music player.
               <br />
               <br /> Click{" "}
-              <a
-                className={style.anchorTag}
-                target="_blank"
-                rel="noreferrer"
-                href="https://lsp-client.onrender.com/"
-              >
+              <a className={style.anchorTag} target="_blank" rel="noreferrer" href="https://github.com/AyrtonCR/groovy-tunes-mp">
                 here
               </a>{" "}
               to view the site.
@@ -322,7 +281,7 @@ const HomeContent = () => {
               }}
             />
             <motion.a
-              href="https://www.google.com"
+              href="https://github.com/AyrtonCR/image-gallery"
               className={style.projectGridTitle}
               initial={{ scale: 1 }}
               target="_blank"
@@ -333,19 +292,11 @@ const HomeContent = () => {
               Display Gallery
             </motion.a>
             <p className={style.gridText}>
-              In my younger years I backpacked quite a lot and had a chance to
-              experience some really incredible countries. It has been a goal of
-              mine to try and capture some of these memories in a way I can
-              uniquely display to people. <br /> <br /> This project will be an
-              image viewer / library with some additional features that make it
-              appealing for a user to navigate. <br /> <br />
+              In my younger years I backpacked quite a lot and had a chance to experience some really incredible countries. It has been a goal of mine to try
+              and capture some of these memories in a way I can uniquely display to people. <br /> <br /> This project will be an image viewer / library with
+              some additional features that make it appealing for a user to navigate. <br /> <br />
               Click{" "}
-              <a
-                className={style.anchorTag}
-                target="_blank"
-                rel="noreferrer"
-                href="https://lsp-client.onrender.com/"
-              >
+              <a className={style.anchorTag} target="_blank" rel="noreferrer" href="https://github.com/AyrtonCR/image-gallery">
                 here
               </a>{" "}
               to view the site.
@@ -360,13 +311,7 @@ const HomeContent = () => {
             transition: "all 1.3s",
           }}
         >
-          <Link
-            to="scrollSinai"
-            spy={true}
-            smooth={true}
-            offset={-199}
-            duration={1000}
-          >
+          <Link to="scrollSinai" spy={true} smooth={true} offset={-190} duration={1000}>
             <HiArrowDown className={style.sectionArrow} />
           </Link>
         </motion.div>
@@ -379,13 +324,7 @@ const HomeContent = () => {
               transition: "all 1.3s",
             }}
           >
-            <Link
-              to="scrollProjects"
-              spy={true}
-              smooth={true}
-              offset={-115}
-              duration={1000}
-            >
+            <Link to="scrollProjects" spy={true} smooth={true} offset={-130} duration={1000}>
               <HiArrowUp className={style.sectionArrow} />
             </Link>
           </motion.div>
@@ -407,7 +346,7 @@ const HomeContent = () => {
                 <motion.a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.google.com"
+                  href="https://github.com/AyrtonCR/sinai-travel"
                   id="scrollSinai"
                   className={style.mainGrid4Heading}
                   initial={{ scale: 1 }}
@@ -426,20 +365,12 @@ const HomeContent = () => {
                 transition: "all 1.9s cubic-bezier(0.17, 0.2, 0.3, 1) 0.3s",
               }}
             >
-              This project is a tourism inspired website for a place called
-              Dahab in Egypt.
+              This project is a tourism inspired website for a place called Dahab in Egypt.
               <br /> <br />
-              Dahab is an beautiful small fishing town on the south-east coast
-              of the Sinai Peninsula where life is cruisy and slow. <br />{" "}
-              <br /> Formerly a fishing village, it is now well known for having
-              one of the best diving locations in the world, the incredible
-              'Blue Hole'. <br /> <br /> Click &nbsp;
-              <a
-                className={style.anchorTag}
-                target="_blank"
-                rel="noreferrer"
-                href="https://lsp-client.onrender.com/"
-              >
+              Dahab is an beautiful small fishing town on the south-east coast of the Sinai Peninsula where life is cruisy and slow. <br /> <br /> Formerly a
+              fishing village, it is now well known for having one of the best diving locations in the world, the incredible 'Blue Hole'. <br /> <br /> Click
+              &nbsp;
+              <a className={style.anchorTag} target="_blank" rel="noreferrer" href="https://github.com/AyrtonCR/sinai-travel">
                 here
               </a>
               &nbsp; to view the project.
@@ -455,13 +386,7 @@ const HomeContent = () => {
             transition: "all 1.3s",
           }}
         >
-          <Link
-            to="scrollFooter"
-            spy={true}
-            smooth={true}
-            offset={-600}
-            duration={1000}
-          >
+          <Link to="scrollFooter" spy={true} smooth={true} offset={-520} duration={1000}>
             <HiArrowDown className={style.sectionArrow} />
           </Link>
         </motion.div>
@@ -472,9 +397,7 @@ const HomeContent = () => {
 
 // EXPORT BELOW FUNCTION //
 const TopLayerWallpaper = (props) => {
-  return (
-    <img className={props.className} src={props.img} alt="top-layer"></img>
-  );
+  return <img className={props.className} src={props.img} alt="top-layer"></img>;
 };
 
 export default HomeContent;

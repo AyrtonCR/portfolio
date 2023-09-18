@@ -75,13 +75,7 @@ const Blurb = () => {
         </motion.h4>
       </motion.div>
       <motion.div className={style.arrowSectionHolder}>
-        <Link
-          to="scrollIntro"
-          spy={true}
-          smooth={true}
-          offset={-140}
-          duration={1000}
-        >
+        <Link to="scrollIntro" spy={true} smooth={true} offset={-161} duration={1000}>
           {" "}
           <HiArrowDown className={style.sectionArrow} />
         </Link>

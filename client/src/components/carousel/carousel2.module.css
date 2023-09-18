@@ -17,11 +17,21 @@
   .gridImage,
   .gridImageBoard,
   .gridImageGoat,
-  .gridImageGuitar {
+  .gridImageGuitar,
+  .gridImageMeFace,
+  .gridImageMeFace2 {
     display: grid;
     justify-self: center;
     width: 12rem;
     padding: 1rem 0;
+  }
+  .gridImageMeFace {
+    border-radius: 50%;
+    width: 15rem;
+  }
+  .gridImageMeFace2 {
+    border-radius: 50%;
+    width: 15rem;
   }
   .mainGrid1,
   .mainGrid2,

@@ -21,13 +21,7 @@ const Footer = () => {
           transition: "all 1.8s cubic-bezier(0.17, 0.35, 0.45, 1) 0.5s",
         }}
       >
-        <Link
-          to="scrollHeader"
-          spy={true}
-          smooth={true}
-          offset={-280}
-          duration={1000}
-        >
+        <Link to="scrollHeader" spy={true} smooth={true} offset={-217} duration={2000}>
           <HiArrowUp className={style.sectionArrow} />
         </Link>
       </motion.div>
