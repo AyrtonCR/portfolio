@@ -1,9 +1,38 @@
-## Portfolio
+## <b> Portfolio </b><em>&nbsp;(lsp)</em>
 
 ---
 
-##### This is my portfolio page which will offer links to other projects I have made, and give a brief description about who I am.
+### <u> Overview</u>
 
-##### It has ben made using HTML, CSS and Javascript using the React Library, with no API or Database.
+<br>
 
-##### Please consider that any links to deployed applications may take up to thirty seconds for the API and database to start up because I am currently using free plans.
+This project is a responsive web app designed as a landing page to show off some of the other projects I am working on. <br>
+
+The web page will include some different features that are aimed at easily showcasing some of the technologies I am familar with and what I am currently working on.
+
+
+<br>
+
+Some of the features this app will include are ...
+
+<br>
+
+- Clearly showcase my other projects.
+- Display a nav bar with a pop out menu that links to my other projects.
+- Utilize the motion framer animation library to add some sleek animations when scrolling.
+- Include clickable arrows to scroll through the contents of the page.
+- Have responsive capability depending on what the user is viewing the page with.
+
+<br>
+
+---
+
+<br>
+
+The application is currently deployed using `Render` to host the `Client`, and there is no `API` or `DB`.
+
+<br>
+
+---
+
+### <u>`Deployed App`</u> - https://ac-portfolio-q1r7.onrender.com/
