@@ -51,51 +51,28 @@ const UpperNavBar = () => {
 
         <div className={`upperDropdownMenu ${open ? "active" : "inactive"}`}>
           <ul className="upperDropdownUl">
-            <DropdownItem
-              text={"Pegasus Bay Surf"}
-              href="https://github.com/AyrtonCR/lsp"
-            />
+            <DropdownItem text={"Pegasus Bay Surf"} href="https://github.com/AyrtonCR/lsp" />
 
-            <DropdownItem text={"Groovy Tunes"} />
-            <DropdownItem text={"Sinai Sun Tourism"} />
-            <DropdownItem
-              text={"Portfolio Project"}
-              href="https://github.com/AyrtonCR/portfolio"
-            />
-            <DropdownItem text={"Display Gallery"} />
+            <DropdownItem text={"Groovy Tunes"} href="https://github.com/AyrtonCR/groovy-tunes-mp" />
+            <DropdownItem text={"Sinai Sun Tourism"} href="https://github.com/AyrtonCR/sinai-travel" />
+            <DropdownItem text={"Portfolio Project"} href="https://github.com/AyrtonCR/portfolio" />
+            <DropdownItem text={"Display Gallery"} href="https://github.com/AyrtonCR/image-gallery" />
           </ul>
         </div>
       </div>
 
       <div className="upperNavSingleLink">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/ayrton-campbell/"
-          className="upperNavSingleLinkText"
-        >
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ayrton-campbell/" className="upperNavSingleLinkText">
           LinkedIn
         </a>
       </div>
       <div className="upperNavSingleLink">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.com"
-          className="upperNavSingleLinkText"
-        >
+        <a target="_blank" rel="noreferrer" href="https://www.google.com" className="upperNavSingleLinkText">
           CV
         </a>
       </div>
       <div className="upperNavSingleLink">
-        <Link
-          to="scrollIntro"
-          spy={true}
-          smooth={true}
-          offset={-145}
-          duration={1000}
-          className="upperNavSingleLinkText"
-        >
+        <Link to="scrollIntro" spy={true} smooth={true} offset={-145} duration={1000} className="upperNavSingleLinkText">
           About
         </Link>
       </div>
@@ -107,12 +84,7 @@ function DropdownItem(props) {
   return (
     <li className="upperDropdownItem">
       <img src={props.img}></img>
-      <a
-        href={props.href}
-        className="upperDropdownText"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={props.href} className="upperDropdownText" target="_blank" rel="noreferrer">
         {" "}
         {props.text}
       </a>
