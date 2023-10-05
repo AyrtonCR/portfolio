@@ -8,7 +8,7 @@
 
 This project is a responsive web app designed as a landing page to show off some of the other projects I am working on. <br>
 
-The web page will include some different features that are aimed at easily showcasing some of the technologies I am familar with and what I am currently working on.
+Built with ReactJS, the web page will include some different features that are aimed at easily showcasing some of the technologies I am familar with, and what I am currently working on.
 
 
 <br>
