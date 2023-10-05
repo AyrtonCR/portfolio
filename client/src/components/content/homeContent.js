@@ -115,14 +115,14 @@ const HomeContent = () => {
             <h4 className={style.introHeading}>Who am I?</h4>
             <div className={style.introGrid}>
               <p className={style.introText1}>
-                I am a Full-stack web developer from Christchurch, NZ. <br />
-                <br /> My aim — to consistently create, deliver and maintain high-quality web applications using modern industry standard technologies. I really
-                enjoy being a part of building solutions that last. <br />
-                <br />I am highly motivated and skilled in working with Front-end, Back-end, Databases and UX Design. Currently I enjoy building with Javascript
-                and React due to it's versatility.
+                I am a Full-stack Web Developer from Christchurch, NZ. <br />
+                <br /> My aim — to consistently create, deliver and maintain high-quality web applications for customers using modern industry standard
+                technologies. I enjoy building solutions that last. <br />
+                <br />I am skilled in working with Front-end, Back-end, Databases and Design. Currently I enjoy building with Javascript and React due to it's
+                versatility.
                 <br />
                 <br />
-                Look{" "}
+                Check{" "}
                 <Link to="scrollProjects" spy={true} smooth={true} offset={-130} duration={1000} className={style.belowSpan}>
                   below
                 </Link>{" "}
@@ -137,8 +137,8 @@ const HomeContent = () => {
                 </p>
                 <br />
                 <br />
-                While I do enjoy web development there are many other things in life that keep me busy. I am a very keen surfer and also really enjoy playing
-                guitar, creating music, and spending time with my friends and family.
+                While I enjoy web development, there are many other things in life that keep me busy. I am a keen surfer, guitar player, I enjoy creating music
+                and spending time with my friends and family.
               </div>
             </div>
           </div>
